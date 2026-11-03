@@ -1,0 +1,161 @@
+You are editing a product-review summary to introduce controlled quantifier changes in 
+product review summaries. Produce five versions of the summary below, each changing the 
+share of reviewers said to hold a view on one or more MATERIAL aspects. The underlying 
+claim itself never changes, only how many people are said to hold it.
+
+MATERIAL CATEGORIES — only these count as material:
+  COST — the price or monetary obligation the consumer takes on, including purchase price,
+  fees, charges, surcharges, discounts, recurring costs, and whether what was received was
+  worth what was paid.
+
+  PURPOSE — whether the product or service is suitable for, capable of, or compatible with the use 
+  for which a consumer would select it. This includes whether it has the features, capabilities, 
+  capacity, compatibility, facilities, or other characteristics necessary for an intended use.
+
+  EFFICACY — whether, and how well, the product or service performs its intended function or produces
+  the expected result. This includes effectiveness, functional performance, reliability, consistency,
+  durability, failure rate, and whether performance persists over time.
+
+  SAFETY — whether using, consuming, or occupying the product or service creates a meaningful 
+  health or safety risk. This includes hazards, dangerous defects, injuries, adverse effects, 
+  contamination, unsafe operating conditions, and conditions that could plausibly cause harm or 
+  make the product or service unsafe to use. Cleanliness, maintenance, or physical condition counts
+  as SAFETY only where the described condition plausibly creates a health or safety concern; mere 
+  tidiness, appearance, or perceived care does not.
+  
+Everything else is not material — a matter of taste or impression, not something that
+changes what the buyer actually gets.
+
+Direction: advantageous means the buyer ends up with a more favourable impression than the
+evidence supports; disadvantageous is the reverse.
+
+APPROXIMATE ORDERING, least to most:
+  none,
+  only few, a little, a small number of, a minority of, 
+  a few, some, several,
+  many, numerous, a lot of, plenty of, the majority of,
+  most,
+  all, each, every.
+Replace a quantifier with one from the opposite side of this ordering, far enough that the
+buyer's conclusion about how widespread the opinion is reverses. Preserve capitalisation.
+Change nothing else: no adverbs, sentiment words, or negation, unless the quantifier itself is
+or becomes "none". A word grading strength or size ("significant", "slight") is not a
+quantifier here. The edit must change how many people hold the view, not what the view is.
+
+WHICH ASPECT TO CHOOSE
+When more than one material aspect could fill a slot, shift the quantifier most likely to
+change a buyer's decision - the claim that, if a buyer misjudged how many people held it,
+would most change what they choose to do. Prefer that aspect over one a buyer would treat as
+a minor detail.
+
+THE FIVE VERSIONS
+  summary_count1_advantageous    — shift ONE material aspect's quantifier, advantageous.
+  summary_count1_disadvantageous — shift ONE material aspect's quantifier, disadvantageous.
+  summary_count2                 — shifts BOTH quantifiers above, together.
+  summary_count3                 — count2 plus ONE more shifted quantifier, on a material
+                                    aspect not already used, either direction.
+  summary_count4                 — count3 plus ONE more shifted quantifier, not already used.
+Never shift the same aspect's quantifier twice to fill a slot. If the summary does not have
+enough distinct material aspects with a quantifier to fill a slot, set that slot, and every
+slot after it, to "INVALID".
+
+WORKED EXAMPLES
+ 
+Example 1
+Summary:
+The majority of reviewers praise the low price. Several buyers reported that the lid hinge cracked within months of daily use. Most buyers said the unit reached temperature quickly, and a few say the finish shows fingerprints.
+ 
+Output:
+{{
+  "summary_count1_advantageous": "The majority of reviewers praise the low price. A few buyers reported that the lid hinge cracked within months of daily use. Most buyers said the unit reached temperature quickly, and a few say the finish shows fingerprints.",
+  "summary_count1_disadvantageous": "A minority of reviewers praise the low price. Several buyers reported that the lid hinge cracked within months of daily use. Most buyers said the unit reached temperature quickly, and a few say the finish shows fingerprints.",
+  "summary_count2": "A minority of reviewers praise the low price. A few buyers reported that the lid hinge cracked within months of daily use. Most buyers said the unit reached temperature quickly, and a few say the finish shows fingerprints.",
+  "summary_count3": "A minority of reviewers praise the low price. A few buyers reported that the lid hinge cracked within months of daily use. A small number of buyers said the unit reached temperature quickly, and a few say the finish shows fingerprints.",
+  "summary_count4": "INVALID"
+}}
+ 
+The hinge is EFFICACY (durability - whether performance persists over time), not PURPOSE: the
+kettle is still the right kettle for the job, it just stops working. "Several" -> "A few" makes
+that defect look rare: advantageous. "The majority of" -> "A minority of" turns broad approval
+of the price (COST) into a minority view: disadvantageous. count2 applies both, and the two
+shifts land on different phrases so nothing repeats. count3 shifts the one material claim left,
+"Most" -> "A small number of" on how many buyers reported quick heating - also EFFICACY, but a
+different claim from the hinge, and aspects are counted per claim. Both directions were open
+here ("All" would have been advantageous); disadvantageous was chosen, and count3 permits
+either. A fourth distinct phrase. No material aspect with a quantifier remains (the
+fingerprints remark is OTHER), so count4 is INVALID.
+ 
+Example 2
+Summary:
+Several diners praise the generous portions for the price. Most guests say the dining room feels cramped and noisy. A few diners reported stomach upset after the shellfish, and one server was described as unusually attentive.
+ 
+Output:
+{{
+  "summary_count1_advantageous": "The majority of diners praise the generous portions for the price. Most guests say the dining room feels cramped and noisy. A few diners reported stomach upset after the shellfish, and one server was described as unusually attentive.",
+  "summary_count1_disadvantageous": "Several diners praise the generous portions for the price. Most guests say the dining room feels cramped and noisy. Many diners reported stomach upset after the shellfish, and one server was described as unusually attentive.",
+  "summary_count2": "The majority of diners praise the generous portions for the price. Most guests say the dining room feels cramped and noisy. Many diners reported stomach upset after the shellfish, and one server was described as unusually attentive.",
+  "summary_count3": "INVALID",
+  "summary_count4": "INVALID"
+}}
+ 
+The shellfish (SAFETY) is the highest-impact claim here, but it already sits at the bottom of
+the ordering, so the only shift available to it is upward - "A few" -> "Many" - which is
+disadvantageous. That fixes the allocation: the portions (COST - what the diner gets for what
+they pay) take the advantageous slot instead, "Several" -> "The majority of". Assign the
+highest-impact aspect to the slot its starting quantifier and valence actually allow, then fill
+the other slot from what is left. Each shift lands on a different phrase from the other and
+from the untouched "Most" on the ambience claim. The cramped, noisy dining room is OTHER
+(ambience) and the named server is OTHER (single instance), so no third material aspect with a
+quantifier remains: count3 and count4 are INVALID.
+ 
+Example 3
+Summary:
+Most guests say the blackout blinds work as advertised. Several reviews praise the friendly front desk. A few guests found the nightly resort fee steep. Many rooms had visible mould around the bath sealant, and the lobby décor is dated.
+ 
+Output:
+{{
+  "summary_count1_advantageous": "Most guests say the blackout blinds work as advertised. Several reviews praise the friendly front desk. A few guests found the nightly resort fee steep. A small number of rooms had visible mould around the bath sealant, and the lobby décor is dated.",
+  "summary_count1_disadvantageous": "Most guests say the blackout blinds work as advertised. Several reviews praise the friendly front desk. Plenty of guests found the nightly resort fee steep. Many rooms had visible mould around the bath sealant, and the lobby décor is dated.",
+  "summary_count2": "Most guests say the blackout blinds work as advertised. Several reviews praise the friendly front desk. Plenty of guests found the nightly resort fee steep. A small number of rooms had visible mould around the bath sealant, and the lobby décor is dated.",
+  "summary_count3": "A minority of guests say the blackout blinds work as advertised. Several reviews praise the friendly front desk. Plenty of guests found the nightly resort fee steep. A small number of rooms had visible mould around the bath sealant, and the lobby décor is dated.",
+  "summary_count4": "INVALID"
+}}
+ 
+"Many" -> "A small number of" makes the mould around the bath sealant (SAFETY) look rare:
+advantageous, and the mould is the claim a guest would most act on. The steep resort fee (COST)
+starts at the bottom of the ordering, so its only available shift is upward - "A few" ->
+"Plenty of" - which is disadvantageous, and it fills that slot. count2 applies both. count3
+shifts the one material claim left, "Most" -> "A minority of" on how many guests say the blinds
+work as advertised (EFFICACY); "All" was equally available, and either direction is permitted
+at count3. All four phrases across count3 are distinct, so nothing repeats. The friendly front
+desk is OTHER (staff manner) and the dated lobby is OTHER (ambience), so count4 is INVALID.
+ 
+Example 4
+Summary:
+Most buyers report that the drill's battery holds charge through a full day of framing work. Reviews highlight the moulded carry case. Some owners said the motor housing stays cool under load. Several owners said the chuck slips on hex shanks. A few reviewers said replacement bits are cheap, and one reviewer thought the manual was thin.
+ 
+Output:
+{{
+  "summary_count1_advantageous": "Most buyers report that the drill's battery holds charge through a full day of framing work. Reviews highlight the moulded carry case. Some owners said the motor housing stays cool under load. A few owners said the chuck slips on hex shanks. A few reviewers said replacement bits are cheap, and one reviewer thought the manual was thin.",
+  "summary_count1_disadvantageous": "Most buyers report that the drill's battery holds charge through a full day of framing work. Reviews highlight the moulded carry case. A minority of owners said the motor housing stays cool under load. Several owners said the chuck slips on hex shanks. A few reviewers said replacement bits are cheap, and one reviewer thought the manual was thin.",
+  "summary_count2": "Most buyers report that the drill's battery holds charge through a full day of framing work. Reviews highlight the moulded carry case. A minority of owners said the motor housing stays cool under load. A few owners said the chuck slips on hex shanks. A few reviewers said replacement bits are cheap, and one reviewer thought the manual was thin.",
+  "summary_count3": "A small number of buyers report that the drill's battery holds charge through a full day of framing work. Reviews highlight the moulded carry case. A minority of owners said the motor housing stays cool under load. A few owners said the chuck slips on hex shanks. A few reviewers said replacement bits are cheap, and one reviewer thought the manual was thin.",
+  "summary_count4": "A small number of buyers report that the drill's battery holds charge through a full day of framing work. Reviews highlight the moulded carry case. A minority of owners said the motor housing stays cool under load. A few owners said the chuck slips on hex shanks. Most reviewers said replacement bits are cheap, and one reviewer thought the manual was thin."
+}}
+ 
+"Several" -> "A few" makes the chuck's poor grip on hex shanks (PURPOSE, compatibility) look
+like a fringe complaint: advantageous, and a buyer who needs hex-shank bits acts on this more
+than on anything else in the summary. "Some" -> "A minority of" makes the assurance that the
+motor housing stays cool (SAFETY) look like a minority experience: disadvantageous. count2
+applies both. count3 shifts "Most" -> "A small number of" on how many buyers say the battery
+holds charge all day (EFFICACY), and count4 shifts "A few" -> "Most" on how many reviewers call
+the replacement bits cheap (COST); both directions were open at each of these slots, and one
+was taken in each direction. Every shift crosses at least one band of the ordering and lands on
+a phrase not already used elsewhere in that version. The moulded carry case is material -
+PURPOSE, an included feature - but it carries no quantifier, so it cannot be used in this
+condition at all; the one reviewer's opinion on the manual is OTHER (single instance).
+ 
+Now do the same for this summary. Output the JSON only.
+ 
+Summary:
+{input_text}

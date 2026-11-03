@@ -1,0 +1,18 @@
+========================================================================
+AGREEMENT ON `correct`  (yes = 1 = correct modification, no = 0 = incorrect modification; unsure/blank excluded)
+========================================================================
+Annotators: A1, A2, A3
+Rows: 165 total, 165 labelled yes/no by 2+ annotators
+  A1: no=13, yes=152
+  A2: no=18, yes=147
+  A3: blank=1, no=11, yes=153
+
+ALL ANNOTATORS TOGETHER
+  Krippendorff's alpha (nominal): 0.662
+  Gwet's AC1:                     0.938
+
+========================================================================
+CORRECT RATE (majority label per row)
+========================================================================
+  Correct modification (1): 154 of 165 rows = 93.3%
+  Incorrect modification (0): 11 of 165 rows = 6.7%

@@ -1,0 +1,592 @@
+# Configuration of the experiment: models, decoding, summarization styles,
+# modifications and metric settings. The analyses read the G-Eval judges from
+# it; the rest documents how src/pipeline/ produced the data.
+#
+# File paths (`data`, `cache`, `state`, `outputs`, `workbook`, ...) refer to the
+# pipeline's original working layout, not to this repository; the released data
+# is in data/. In data/scores.parquet, `alignscore_default` and
+# `minicheck_7b_default` are stored as `alignscore` and `minicheck_7b`; the other
+# metric variants below were not used in the paper.
+
+seed: 42
+data: ./data/reviews/all_review_datasets.json
+review_order_seed: 42
+cache: .cache/responses
+state: .state
+llm_execution: batch
+
+batch:
+  max_requests_per_job: 1000
+  max_payload_bytes: 15000000
+  modal_requests_per_job: 64
+  modal_startup_wait_seconds: 900
+
+modal:
+  app_name: deception-review-experiment
+  qwen_gpu: A100-80GB
+  qwen_cpu_cores: 8
+  qwen_score_batch_size: 1
+  qwen_score_max_input_tokens: 48000
+  qwen_score_torch_version: 2.9.1
+  qwen_score_transformers_version: 5.14.1
+  qwen_score_flash_attention_version: 2.8.3
+  qwen_score_flash_linear_attention_version: 0.4.0
+  qwen_score_causal_conv1d_version: 1.6.2.post1
+  qwen_score_prefix_cache: true
+  qwen_score_prefix_cache_min_tokens: 512
+  qwen_score_prefix_cache_max_tokens: 32000
+  qwen_score_prefix_cache_tolerance: 0.01
+  qwen_score_backend_version: transformers-unpadded-prefix-cache-v3
+  metric_gpu: L4
+  legacy_metric_gpu: T4
+  factgraph_gpu: A10G
+  qwen_scaledown_window_seconds: 600
+  scaledown_window_seconds: 60
+  model_volume: deception-model-weights
+  hugging_face_cache_volume: deception-huggingface-cache
+  vllm_cache_volume: deception-vllm-cache
+
+outputs:
+  summaries: outputs/summaries.jsonl
+  modifications: outputs/modifications.jsonl
+  scores: outputs/scores.parquet
+  manual_scores: outputs/scores_manual.parquet
+  manifest: outputs/run_manifest.json
+
+decoding:
+  temperature: 0.0
+  top_p: 1.0
+  max_tokens: 1024
+  seed: 42
+  context_tokens: 48000
+
+modification_decoding:
+  temperature: 0.0
+  top_p: 1.0
+  max_tokens: 8192
+  seed: 42
+  openai_max_tokens_parameter: max_completion_tokens
+  qwen_enable_thinking: true
+  qwen_thinking_token_budget: 1024
+  context_tokens: 48000
+
+models:
+  openai:
+    provider: openai
+    model: gpt-4o-mini
+    request_model: gpt-4o-mini-2024-07-18
+    revision: gpt-4o-mini-2024-07-18
+    context_tokens: 48000
+
+  claude:
+    provider: anthropic
+    model: claude-haiku-4-5
+    request_model: claude-haiku-4-5-20251001
+    revision: claude-haiku-4-5-20251001
+    context_tokens: 48000
+
+  gemini:
+    provider: google
+    model: gemini-2.5-flash-lite
+    request_model: gemini-2.5-flash-lite
+    revision: gemini-2.5-flash-lite-001
+    context_tokens: 48000
+
+  qwen:
+    provider: modal_qwen
+    model: Qwen/Qwen3.6-27B
+    context_tokens: 48000
+
+  primary_modifier:
+    provider: openai
+    model: gpt-5.6-sol
+    request_model: gpt-5.6-sol
+    revision: gpt-5.6-sol
+    context_tokens: 48000
+    unsupported_sampling:
+      - temperature
+      - top_p
+
+summary_conditions:
+  openai_short_summary:
+    model: openai
+    prompt: short_summary.txt
+    primary: true
+    ablation: true
+
+  openai_bullet_points:
+    model: openai
+    prompt: bullet_points.txt
+    primary: true
+    ablation: false
+  
+  openai_positive_and_negative:
+    model: openai
+    prompt: positive_and_negative.txt
+    primary: true
+    ablation: false
+
+  openai_majority_opinion:
+    model: openai
+    prompt: majority_opinion.txt
+    primary: true
+    ablation: false
+
+  openai_long_summary:
+    model: openai
+    prompt: long_summary.txt
+    primary: true
+    ablation: false
+
+  openai_single_sentence:
+    model: openai
+    prompt: single_sentence.txt
+    primary: true
+    ablation: false
+
+  openai_amazon_style:
+    model: openai
+    prompt: amazon_style.txt
+    primary: true
+    ablation: false
+
+  openai_gmaps_style:
+    model: openai
+    prompt: gmaps_style.txt
+    primary: true
+    ablation: false
+
+  claude_faithful:
+    model: claude
+    prompt: short_summary.txt
+    primary: true
+    ablation: true
+
+  gemini_faithful:
+    model: gemini
+    prompt: short_summary.txt
+    primary: true
+    ablation: true
+
+  qwen_faithful:
+    model: qwen
+    prompt: short_summary.txt
+    primary: false
+    ablation: true
+
+modification:
+  review_filters:
+    - remove_50pct_one_star
+    - remove_100pct_one_star
+    - remove_50pct_five_star
+    - remove_100pct_five_star
+
+prompts:
+  tasks:
+    factual_misrepresentation: misrepresentation.txt
+    omission:                  omission.txt
+    quantifier_change:         quantifier.txt
+
+manual_modification:
+  style: openai_short_summary
+  sample_size: 100
+  seed: 42
+  stratify_by: source
+  workbook: outputs/manual_review.xlsx
+  output: outputs/modifications_manual_edits.jsonl
+
+modification_review:
+  seed: 42
+  per_cell: 1
+  workbook: outputs/modification_review.xlsx
+  output: outputs/modifications_review_sample.jsonl
+
+geval_judge: qwen36
+
+geval_judge_defaults:
+  provider: modal_qwen
+  context_tokens: 48000
+  chat_template_kwargs:
+    enable_thinking: false
+
+geval_judges:
+  qwen36:
+    model: Qwen/Qwen3.6-27B
+
+  qwen35:
+    model: Qwen/Qwen3.5-27B
+    revision: fc05daec18b0a78c049392ed2e771dde82bdf654
+    app_name: deception-review-experiment-qwen35
+
+  olmo31:
+    model: allenai/Olmo-3.1-32B-Instruct
+    revision: ac0587e4a7744a551c059d8cd17ba220bc940dae
+    app_name: deception-review-experiment-olmo31
+
+  gemma4:
+    model: google/gemma-4-31B-it
+    revision: 842da3794eaa0b77d5f08bae87a17459d91ff475
+    app_name: deception-review-experiment-gemma4
+    attn_implementation: sdpa
+    answer_prefix: form_line
+    gpu: H200
+
+metrics:
+  geval_consistency:
+    enabled: true
+    prompt: prompts/geval/consistency.txt
+    modal_batch_size: 1
+    higher_is_faithful: true
+    primary_for:
+      - factual_misrepresentation
+      - quantifier_change
+    report:
+      family: LLM-as-a-judge
+      model: "{judge_model}"
+      source_unit: whole review set in one prompt
+      summary_unit: whole summary
+      aggregation: probability-weighted mean of the 1-5 rating
+      input_limit: "{context_tokens} tokens"
+      precision: bf16
+
+  geval_relevance:
+    enabled: true
+    prompt: prompts/geval/relevance.txt
+    modal_batch_size: 1
+    higher_is_faithful: true
+    primary_for:
+      - omission
+      - review_filtering
+    report:
+      family: LLM-as-a-judge
+      model: "{judge_model}"
+      source_unit: whole review set in one prompt
+      summary_unit: whole summary
+      aggregation: probability-weighted mean of the 1-5 rating
+      input_limit: "{context_tokens} tokens"
+      precision: bf16
+
+  supert:
+    enabled: true
+    modal_class: SupertService
+    modal_batch_size: 32
+    revision: acl20-ref-free-eval@f283ce2c;sentence-transformers==3.4.1;model@4088dbef;docs=per_review;top15;f1
+    higher_is_faithful: true
+    options:
+      document_segmentation: per_review
+      pseudo_reference: top15
+      similarity: f1
+    primary_for:
+      - omission
+    secondary_for:
+      - review_filtering
+      - factual_misrepresentation
+    report:
+      family: Pseudo-reference-based
+      model: SBERT bert-large-nli-stsb-mean-tokens (335M)
+      source_unit: one review per document, its top 15 sentences as pseudo-reference
+      summary_unit: summary tokens
+      aggregation: token-alignment F1 per review, mean over reviews
+      input_limit: 128 tokens per sentence
+      precision: fp32
+
+  summac_conv:
+    enabled: true
+    modal_class: SummaCService
+    modal_batch_size: 32
+    revision: summac==0.0.4;vitc@3082ba54;conv@525cb081;granularity=paragraph-sentence;max_doc_sents=all;precision=fp16;premises=reviews;premise_tokens=400
+    higher_is_faithful: true
+    options:
+      granularity: paragraph-sentence
+      max_doc_sents: null
+      half_precision: true
+      premises: reviews
+      premise_tokens: 400
+    parameters:
+      maximum_sentence_pairs_per_batch: 8000
+    primary_for:
+      - factual_misrepresentation
+      - quantifier_change
+    report:
+      family: NLI-based
+      model: ALBERT-xlarge VitaminC-MNLI (59M)
+      source_unit: one review per premise, split at sentences past {premise_tokens} tokens
+      summary_unit: sentence
+      aggregation: histogram of NLI scores over reviews into a trained convolution, mean over sentences
+      input_limit: 500 tokens per pair
+      precision: fp16
+
+  summac_zs:
+    enabled: true
+    modal_class: SummaCZeroShotService
+    modal_batch_size: 32
+    revision: summac==0.0.4;vitc@3082ba54;zs;granularity=paragraph-sentence;max_doc_sents=all;precision=fp16;op1=max;op2=mean;labels=ec;premises=reviews;premise_tokens=400
+    higher_is_faithful: true
+    options:
+      granularity: paragraph-sentence
+      max_doc_sents: null
+      premises: reviews
+      premise_tokens: 400
+      half_precision: true
+      premise_aggregation: max
+      summary_aggregation: mean
+      use_entailment: true
+      use_contradiction: true
+    primary_for:
+      - factual_misrepresentation
+      - quantifier_change
+    report:
+      family: NLI-based
+      model: ALBERT-xlarge VitaminC-MNLI (59M)
+      source_unit: one review per premise, split at sentences past {premise_tokens} tokens
+      summary_unit: sentence
+      aggregation: max over premises of P(entail) - P(contradict), mean over sentences
+      input_limit: 500 tokens per pair
+      precision: fp16
+
+  summac_conv_default:
+    enabled: true
+    modal_class: SummaCDefaultService
+    modal_batch_size: 32
+    revision: summac==0.0.4;vitc@3082ba54;conv@525cb081;granularity=sentence;max_doc_sents=100;precision=fp16;premises=library
+    higher_is_faithful: true
+    options:
+      granularity: sentence
+      max_doc_sents: 100
+      half_precision: true
+      premises: library
+    parameters:
+      maximum_sentence_pairs_per_batch: 8000
+    primary_for:
+      - factual_misrepresentation
+      - quantifier_change
+    report:
+      family: NLI-based
+      model: ALBERT-xlarge VitaminC-MNLI (59M)
+      source_unit: authors' default, source sentences, first 100 kept
+      summary_unit: sentence
+      aggregation: histogram of NLI scores into a trained convolution, mean over sentences
+      input_limit: 500 tokens per pair
+      precision: fp16
+
+  summac_zs_default:
+    enabled: true
+    modal_class: SummaCZeroShotDefaultService
+    modal_batch_size: 32
+    revision: summac==0.0.4;vitc@3082ba54;zs;granularity=sentence;max_doc_sents=100;precision=fp16;op1=max;op2=mean;labels=ec;premises=library
+    higher_is_faithful: true
+    options:
+      granularity: sentence
+      max_doc_sents: 100
+      half_precision: true
+      premise_aggregation: max
+      summary_aggregation: mean
+      use_entailment: true
+      use_contradiction: true
+      premises: library
+    primary_for:
+      - factual_misrepresentation
+      - quantifier_change
+    report:
+      family: NLI-based
+      model: ALBERT-xlarge VitaminC-MNLI (59M)
+      source_unit: authors' default, source sentences, first 100 kept
+      summary_unit: sentence
+      aggregation: max over premises of P(entail) - P(contradict), mean over sentences
+      input_limit: 500 tokens per pair
+      precision: fp16
+
+  bartscore_faithfulness:
+    enabled: false
+    modal_class: BARTScoreService
+    modal_batch_size: 16
+    revision: facebook/bart-large-cnn@37f520fa;neulab-algorithm@248f511c
+    higher_is_faithful: true
+    parameters:
+      direction: faithfulness
+      batch_size: 8
+      maximum_source_chunk_characters: 3000
+    primary_for:
+      - factual_misrepresentation
+      - quantifier_change
+    secondary_for:
+      - omission
+      - review_filtering
+
+  bartscore_coverage:
+    enabled: false
+    modal_class: BARTScoreService
+    modal_batch_size: 16
+    revision: facebook/bart-large-cnn@37f520fa;neulab-algorithm@248f511c
+    higher_is_faithful: true
+    parameters:
+      direction: coverage
+      batch_size: 8
+    primary_for:
+      - omission
+      - review_filtering
+
+  qafacteval:
+    enabled: true
+    modal_class: QAFactEvalService
+    modal_batch_size: 4
+    revision: QAFactEval@01177f11;QAEval==0.1.0;lerc_quip;bart-large@cb48c136
+    higher_is_faithful: true
+    options:
+      generation_batch_size: 4
+      answering_batch_size: 4
+      lerc_batch_size: 4
+    primary_for:
+      - factual_misrepresentation
+      - quantifier_change
+    report:
+      family: QA-based
+      model: BART-large question generation, ELECTRA-large QA, LERC-QuIP answer overlap
+      source_unit: 384-token windows at stride 128, crossing reviews
+      summary_unit: answer spans selected from the summary
+      aggregation: mean LERC-QuIP answer overlap over questions
+      input_limit: 384 tokens per window
+      precision: fp32
+
+  alignscore:
+    enabled: true
+    modal_class: AlignScoreService
+    modal_batch_size: 8
+    revision: alignscore@a0936d5a;AlignScore-large@8509e78d;roberta-large@722cf37b;torch==2.7.1;transformers==4.48.3;pytorch-lightning==1.9.5;premises=reviews;premise_tokens=400;claims=sentence;op1=max;op2=mean;precision=fp32
+    higher_is_faithful: true
+    options:
+      chunking: reviews
+      premise_tokens: 400
+    primary_for:
+      - factual_misrepresentation
+      - quantifier_change
+    report:
+      family: Alignment-based
+      model: AlignScore-large (RoBERTa-large, 355M)
+      source_unit: one review per premise, split at sentences past {premise_tokens} tokens
+      summary_unit: sentence
+      aggregation: max over premises of P(aligned), mean over sentences
+      input_limit: 512 tokens per pair
+      precision: fp32
+
+  alignscore_default:
+    enabled: true
+    modal_class: AlignScoreDefaultService
+    modal_batch_size: 8
+    revision: alignscore@a0936d5a;AlignScore-large@8509e78d;roberta-large@722cf37b;torch==2.7.1;transformers==4.48.3;pytorch-lightning==1.9.5;premises=library;claims=sentence;op1=max;op2=mean;precision=fp32
+    higher_is_faithful: true
+    options:
+      chunking: library
+    primary_for:
+      - factual_misrepresentation
+      - quantifier_change
+    report:
+      family: Alignment-based
+      model: AlignScore-large (RoBERTa-large, 355M)
+      source_unit: authors' default, equal sentence-count groups of about 350 words
+      summary_unit: sentence
+      aggregation: max over premises of P(aligned), mean over sentences
+      input_limit: 512 tokens per pair, premise truncated beyond
+      precision: fp32
+
+  minicheck:
+    enabled: false
+    modal_class: MiniCheckService
+    modal_batch_size: 8
+    revision: minicheck@b58b9fa6;MiniCheck-Flan-T5-Large@96eafd01;torch==2.7.1;transformers==4.48.3;premises=reviews;premise_words=500;claims=sentence;op1=max;op2=mean;precision=fp32
+    higher_is_faithful: true
+    options:
+      chunking: reviews
+      premise_words: 500
+    primary_for:
+      - factual_misrepresentation
+      - quantifier_change
+    report:
+      family: Fact-checker
+      model: MiniCheck-Flan-T5-Large (770M)
+      source_unit: one review per premise, split at sentences past {premise_words} words
+      summary_unit: sentence
+      aggregation: max over premises of P(supported), mean over sentences
+      input_limit: 2,048 tokens per pair
+      precision: fp32
+
+  minicheck_default:
+    enabled: false
+    modal_class: MiniCheckDefaultService
+    modal_batch_size: 8
+    revision: minicheck@b58b9fa6;MiniCheck-Flan-T5-Large@96eafd01;torch==2.7.1;transformers==4.48.3;premises=library;premise_words=500;claims=sentence;op1=max;op2=mean;precision=fp32
+    higher_is_faithful: true
+    options:
+      chunking: library
+      premise_words: 500
+    primary_for:
+      - factual_misrepresentation
+      - quantifier_change
+    report:
+      family: Fact-checker
+      model: MiniCheck-Flan-T5-Large (770M)
+      source_unit: authors' default, sentences packed to at most {premise_words} words across reviews
+      summary_unit: sentence
+      aggregation: max over premises of P(supported), mean over sentences
+      input_limit: 2,048 tokens per pair
+      precision: fp32
+
+  minicheck_7b:
+    enabled: true
+    modal_class: MiniCheck7BService
+    modal_batch_size: 8
+    revision: minicheck@b58b9fa6;Bespoke-MiniCheck-7B@1ed7786b;torch==2.11.0;transformers==4.57.6;backend=reference;tokens=library;attention=sdpa;batch=1;max_model_len=32768;premises=reviews;claims=sentence;op1=max;op2=mean;precision=bf16
+    higher_is_faithful: true
+    options:
+      chunking: reviews
+      max_model_len: 32768
+    primary_for:
+      - factual_misrepresentation
+      - quantifier_change
+    report:
+      family: Fact-checker
+      model: Bespoke-MiniCheck-7B (InternLM2, 7B)
+      source_unit: one review per premise
+      summary_unit: sentence
+      aggregation: max over premises of P(Yes), mean over sentences
+      input_limit: "{max_model_len} tokens per prompt"
+      precision: bf16
+
+  minicheck_7b_default:
+    enabled: true
+    modal_class: MiniCheck7BDefaultService
+    modal_batch_size: 8
+    revision: minicheck@b58b9fa6;Bespoke-MiniCheck-7B@1ed7786b;torch==2.11.0;transformers==4.57.6;backend=reference;tokens=library;attention=sdpa;batch=1;max_model_len=32768;premises=library;claims=sentence;op1=max;op2=min;precision=bf16
+    higher_is_faithful: true
+    options:
+      chunking: library
+      max_model_len: 32768
+    primary_for:
+      - factual_misrepresentation
+      - quantifier_change
+    report:
+      family: Fact-checker
+      model: Bespoke-MiniCheck-7B (InternLM2, 7B)
+      source_unit: authors' default, whole review set as one document
+      summary_unit: sentence
+      aggregation: max over chunks, minimum over sentences
+      input_limit: "{max_model_len} tokens per prompt"
+      precision: bf16
+
+  factgraph:
+    enabled: true
+    modal_class: FactGraphService
+    modal_batch_size: 8
+    revision: fact-graph@165285a4;factgraph@sha256:e07e209a;electra-base-discriminator@1ae76a97;paraphrase-mpnet-base-v2@sha256:a52c823f;amrlib==0.7.1;parse_xfm_bart_large-v0_1_0@sha256:2fcfe211;bart-large@cb48c136;amr-utils@be5534db;fast_align@cab1e9aa;torch==1.9.0;article=source;graphs=5;claims=sentence;op2=mean;batch=1;precision=fp32
+    higher_is_faithful: true
+    primary_for:
+      - factual_misrepresentation
+      - quantifier_change
+    report:
+      family: Graph-based
+      model: FactGraph (ELECTRA-base with graph adapters, AMR via amrlib BART-large)
+      source_unit: whole review set; 5 most similar review sentences as AMR graphs
+      summary_unit: sentence
+      aggregation: P(correct), mean over sentences
+      input_limit: 512 tokens for text, 300 per graph
+      precision: fp32

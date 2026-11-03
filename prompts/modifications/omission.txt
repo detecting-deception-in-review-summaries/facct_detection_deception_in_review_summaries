@@ -1,0 +1,148 @@
+You are editing a product-review summary to introduce controlled omissions in product review 
+summaries. Produce five versions of the summary
+below, each deleting one or more MATERIAL aspects so the reader no longer learns them. Never
+delete a non-material aspect, and never acknowledge the gap.
+
+MATERIAL CATEGORIES — only these count as material:
+  COST — the price or monetary obligation the consumer takes on, including purchase price,
+  fees, charges, surcharges, discounts, recurring costs, and whether what was received was
+  worth what was paid.
+
+  PURPOSE — whether the product or service is suitable for, capable of, or compatible with the use 
+  for which a consumer would select it. This includes whether it has the features, capabilities, 
+  capacity, compatibility, facilities, or other characteristics necessary for an intended use.
+
+  EFFICACY — whether, and how well, the product or service performs its intended function or produces
+  the expected result. This includes effectiveness, functional performance, reliability, consistency,
+  durability, failure rate, and whether performance persists over time.
+
+  SAFETY — whether using, consuming, or occupying the product or service creates a meaningful 
+  health or safety risk. This includes hazards, dangerous defects, injuries, adverse effects, 
+  contamination, unsafe operating conditions, and conditions that could plausibly cause harm or 
+  make the product or service unsafe to use. Cleanliness, maintenance, or physical condition counts
+  as SAFETY only where the described condition plausibly creates a health or safety concern; mere 
+  tidiness, appearance, or perceived care does not.
+  
+Everything else is not material — a matter of taste or impression, not something that
+changes what the buyer actually gets.
+
+Direction: advantageous means the buyer ends up with a more favourable impression than the
+evidence supports; disadvantageous is the reverse. Deleting a NEGATIVE material claim is
+advantageous; deleting a POSITIVE one is disadvantageous.
+
+HOW TO DELETE ONE ASPECT
+Remove the whole sentence or bullet where it covers that aspect alone; otherwise remove the
+coordinated item or clause and repair the coordination, adjusting only the capitalisation and
+punctuation your deletion broke. Delete only — never replace, hedge, or soften what you
+removed. Do not touch quantifiers on aspects that remain.
+
+WHICH ASPECT TO CHOOSE
+When more than one material aspect could fill a slot, delete the one most likely to change a
+buyer's decision - the claim that, if a buyer never learned it, would most change what they
+choose to do. Prefer that aspect over one a buyer would treat as a minor detail.
+
+THE FIVE VERSIONS
+  summary_count1_advantageous    — delete exactly ONE negative material aspect.
+  summary_count1_disadvantageous — delete exactly ONE positive material aspect.
+  summary_count2                 — deletes BOTH aspects above, together.
+  summary_count3                 — count2 plus ONE more deleted material aspect, of either
+                                    valence, not already used.
+  summary_count4                 — count3 plus ONE more deleted material aspect, not already
+                                    used.
+Never delete the same aspect twice to fill a slot. If the summary does not have enough
+distinct material aspects of the needed valence to fill a slot, set that slot, and every slot
+after it, to "INVALID".
+
+WORKED EXAMPLES
+ 
+Example 1
+Summary:
+The majority of reviewers praise the low price and the clean retro styling. Several buyers reported that the lid hinge cracked within months of daily use. Most buyers said the unit reached temperature quickly, and a few say the finish shows fingerprints.
+ 
+Output:
+{{
+  "summary_count1_advantageous": "The majority of reviewers praise the low price and the clean retro styling. Most buyers said the unit reached temperature quickly, and a few say the finish shows fingerprints.",
+  "summary_count1_disadvantageous": "The majority of reviewers praise the clean retro styling. Several buyers reported that the lid hinge cracked within months of daily use. Most buyers said the unit reached temperature quickly, and a few say the finish shows fingerprints.",
+  "summary_count2": "The majority of reviewers praise the clean retro styling. Most buyers said the unit reached temperature quickly, and a few say the finish shows fingerprints.",
+  "summary_count3": "The majority of reviewers praise the clean retro styling. A few say the finish shows fingerprints.",
+  "summary_count4": "INVALID"
+}}
+ 
+The hinge is EFFICACY (durability - whether performance persists over time), not PURPOSE: the
+kettle is still the right kettle for the job, it just stops working. It is the only
+unfavourable material claim, so it fills the advantage slot by removing its sentence. COST
+outranks EFFICACY among the remaining positive claims, so the disadvantage slot removes the
+price from the coordination and repairs it; the styling is OTHER and stays. count2 removes
+both. count3 removes the one material claim left, the heating speed - also EFFICACY, but a
+different claim from the hinge, and aspects are counted per claim - dropping its clause and
+promoting the fingerprints remark to its own sentence. No material aspect remains, so count4
+is INVALID.
+ 
+Example 2
+Summary:
+Reviewers consistently commend the warm welcome and the generous portions for the price. The dining room is cramped and noisy. Several diners reported stomach upset after the shellfish, and one server was described as unusually attentive.
+ 
+Output:
+{{
+  "summary_count1_advantageous": "Reviewers consistently commend the warm welcome and the generous portions for the price. The dining room is cramped and noisy. One server was described as unusually attentive.",
+  "summary_count1_disadvantageous": "Reviewers consistently commend the warm welcome. The dining room is cramped and noisy. Several diners reported stomach upset after the shellfish, and one server was described as unusually attentive.",
+  "summary_count2": "Reviewers consistently commend the warm welcome. The dining room is cramped and noisy. One server was described as unusually attentive.",
+  "summary_count3": "INVALID",
+  "summary_count4": "INVALID"
+}}
+ 
+The shellfish (SAFETY) is the only negative material claim. It shares a sentence with the
+attentive server, which is OTHER, so only its own clause is cut and the surviving clause is
+promoted to a sentence - the server remark stays, untouched and unhedged. The portions (COST -
+what the buyer gets for what they pay) leave the coordination in the disadvantage slot; the
+warm welcome is OTHER and stays. The cramped, noisy room is OTHER (ambience). Only two
+material aspects exist, so count3 and count4 are INVALID.
+ 
+Example 3
+Summary:
+Guests say the blackout blinds work as advertised. Reviews praise the friendly front desk, though several call the nightly resort fee steep. Several rooms had visible mould around the bath sealant, and the lobby décor is dated.
+ 
+Output:
+{{
+  "summary_count1_advantageous": "Guests say the blackout blinds work as advertised. Reviews praise the friendly front desk, though several call the nightly resort fee steep. The lobby décor is dated.",
+  "summary_count1_disadvantageous": "Reviews praise the friendly front desk, though several call the nightly resort fee steep. Several rooms had visible mould around the bath sealant, and the lobby décor is dated.",
+  "summary_count2": "Reviews praise the friendly front desk, though several call the nightly resort fee steep. The lobby décor is dated.",
+  "summary_count3": "Reviews praise the friendly front desk. The lobby décor is dated.",
+  "summary_count4": "INVALID"
+}}
+ 
+Two negative material claims compete for the advantage slot: the mould (SAFETY) and the steep
+resort fee (COST). The mould wins - a guest who never learns of it is the one most likely to
+book differently - and its clause is cut, leaving the dated lobby (OTHER) as its own sentence.
+The blinds (EFFICACY) are the only positive material claim, so they fill the disadvantage slot
+by sentence removal. count3 takes the fee, the material claim left over, dropping the
+concessive clause; its valence makes this deletion advantageous, which count3 permits. The
+friendly front desk is OTHER (staff manner) and the dated lobby is OTHER (ambience), so count4
+is INVALID.
+ 
+Example 4
+Summary:
+Buyers report that the drill's battery holds charge through a full day of framing work. Reviews highlight the moulded carry case and the motor housing that stays cool under load. Several owners said the chuck slips on hex shanks. Replacement bits are cheap, and one reviewer thought the manual was thin.
+ 
+Output:
+{{
+  "summary_count1_advantageous": "Buyers report that the drill's battery holds charge through a full day of framing work. Reviews highlight the moulded carry case and the motor housing that stays cool under load. Replacement bits are cheap, and one reviewer thought the manual was thin.",
+  "summary_count1_disadvantageous": "Buyers report that the drill's battery holds charge through a full day of framing work. Reviews highlight the moulded carry case. Several owners said the chuck slips on hex shanks. Replacement bits are cheap, and one reviewer thought the manual was thin.",
+  "summary_count2": "Buyers report that the drill's battery holds charge through a full day of framing work. Reviews highlight the moulded carry case. Replacement bits are cheap, and one reviewer thought the manual was thin.",
+  "summary_count3": "Reviews highlight the moulded carry case. Replacement bits are cheap, and one reviewer thought the manual was thin.",
+  "summary_count4": "Reviews highlight the moulded carry case. One reviewer thought the manual was thin."
+}}
+ 
+The chuck's grip on hex shanks (PURPOSE, compatibility) is the only negative material claim, so
+it fills the advantage slot by sentence removal. The cool motor housing (SAFETY) fills the
+disadvantage slot - a buyer who never learns the housing was found safe under load loses the
+most consequential assurance on offer - and it leaves the coordination governed by "highlight",
+with the carry case standing. count3 removes the battery (EFFICACY) and count4 the replacement
+bits (COST), promoting the manual remark to its own sentence. The moulded carry case is
+material too - PURPOSE, an included feature - but it is the lowest-impact material claim here,
+so it survives every slot. The thin manual is OTHER (single instance).
+ 
+Now do the same for this summary. Output the JSON only.
+ 
+Summary:
+{input_text}

@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+._*
+
+# API keys for src/pipeline (see .env.example)
+.env
+
+# Kept locally, not released
+paper_latex/
+google_maps_experiment/google_maps_dataset.json

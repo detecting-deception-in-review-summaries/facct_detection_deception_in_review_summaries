@@ -1,0 +1,172 @@
+You are editing a product-review summary to introduce controlled factual errors in product
+review summaries. Produce five versions of the
+summary below, each reversing the verdict on one or more MATERIAL aspects. Never touch a
+non-material aspect.
+
+MATERIAL CATEGORIES — only these count as material:
+  COST — the price or monetary obligation the consumer takes on, including purchase price,
+  fees, charges, surcharges, discounts, recurring costs, and whether what was received was
+  worth what was paid.
+
+  PURPOSE — whether the product or service is suitable for, capable of, or compatible with the use 
+  for which a consumer would select it. This includes whether it has the features, capabilities, 
+  capacity, compatibility, facilities, or other characteristics necessary for an intended use.
+
+  EFFICACY — whether, and how well, the product or service performs its intended function or produces
+  the expected result. This includes effectiveness, functional performance, reliability, consistency,
+  durability, failure rate, and whether performance persists over time.
+
+  SAFETY — whether using, consuming, or occupying the product or service creates a meaningful 
+  health or safety risk. This includes hazards, dangerous defects, injuries, adverse effects, 
+  contamination, unsafe operating conditions, and conditions that could plausibly cause harm or 
+  make the product or service unsafe to use. Cleanliness, maintenance, or physical condition counts
+  as SAFETY only where the described condition plausibly creates a health or safety concern; mere 
+  tidiness, appearance, or perceived care does not.
+
+Everything else is not material — a matter of taste or impression, not something that
+changes what the buyer actually gets.
+
+Direction: advantageous means the buyer ends up with a more favourable impression than the
+evidence supports; disadvantageous is the reverse.
+
+HOW TO REVERSE ONE ASPECT
+Default to swapping the evaluative word or phrase for a genuine opposite in place: "cracked" ->
+"held up well", "shows fingerprints" -> "hides fingerprints". Use this whenever the words that
+carry the verdict on your aspect belong to your aspect alone - which is most of the time.
+
+Only move the aspect out when those same words also carry the verdict on another aspect: a
+shared list, a shared clause, or framing words a step back from the aspect itself (a clause
+like "there are concerns regarding X" or "reviews highlight X and Y" still carries a verdict on
+X even though the flip would only touch a word inside it). In that case, take your aspect out,
+invert it, and re-attach it elsewhere in the sentence so it still reads naturally - a trailing
+concessive clause (", while noting X"), a trailing contrast (", though X"), a semicolon clause
+("; however, X remains poor"), or a leading contrast (", despite X"). Pick whichever
+construction fits this sentence, not the same one every time, and check that the surrounding
+wording still makes sense once your aspect is reversed, not just the aspect's own words.
+
+Change the smallest span that reverses the one aspect and nothing else; repair only the
+grammar your own edit broke; never delete the aspect or add new information.
+
+Do not reverse a claim by merely negating it - inserting "not", "never", "no longer", "failed
+to", or similar in front of the original wording. "The hinge cracked" must become "The hinge
+held up well", not "The hinge did not crack"; a negated claim reads as a hedge, not a stated
+fact, and gives away the edit. Only remove a negation that was already there, as in "does not
+seal well" -> "seals well". Change the verdict on the aspect, not the aspect itself: "The
+hinge cracked" may become "The hinge held up well"; it may not become "The lid seals well".
+
+WHICH ASPECT TO CHOOSE
+When more than one material aspect could fill a slot, reverse the one most likely to change a
+buyer's decision - the claim that, if a buyer were wrong about it, would most change what they
+choose to do. Prefer that aspect over one a buyer would treat as a minor detail.
+
+THE FIVE VERSIONS
+  summary_count1_advantageous    — reverse exactly ONE material aspect, advantageous.
+  summary_count1_disadvantageous — reverse exactly ONE material aspect, disadvantageous.
+  summary_count2                 — contains BOTH reversals above, applied together to the
+                                    same summary.
+  summary_count3                 — count2 plus ONE more reversed material aspect, on a new
+                                    aspect not already used. Direction is whichever is
+                                    available; it need not be balanced.
+  summary_count4                 — count3 plus ONE more reversed material aspect, on a new
+                                    aspect not already used.
+Never reverse the same aspect twice to fill a slot. If the summary does not have enough
+distinct material aspects to fill a slot, set that slot, and every slot after it, to
+"INVALID".
+
+WORKED EXAMPLES
+ 
+Example 1
+Summary:
+The majority of reviewers praise the low price and the clean retro styling. Several buyers reported that the lid hinge cracked within months of daily use. Most buyers said the unit reached temperature quickly, and a few say the finish shows fingerprints.
+ 
+Output:
+{{
+  "summary_count1_advantageous": "The majority of reviewers praise the low price and the clean retro styling. Several buyers reported that the lid hinge held up well over months of daily use. Most buyers said the unit reached temperature quickly, and a few say the finish shows fingerprints.",
+  "summary_count1_disadvantageous": "The majority of reviewers praise the clean retro styling; the price, however, is steep. Several buyers reported that the lid hinge cracked within months of daily use. Most buyers said the unit reached temperature quickly, and a few say the finish shows fingerprints.",
+  "summary_count2": "The majority of reviewers praise the clean retro styling; the price, however, is steep. Several buyers reported that the lid hinge held up well over months of daily use. Most buyers said the unit reached temperature quickly, and a few say the finish shows fingerprints.",
+  "summary_count3": "The majority of reviewers praise the clean retro styling; the price, however, is steep. Several buyers reported that the lid hinge held up well over months of daily use. Most buyers said the unit reached temperature slowly, and a few say the finish shows fingerprints.",
+  "summary_count4": "INVALID"
+}}
+ 
+The hinge is EFFICACY (durability - whether performance persists over time), not PURPOSE: the
+kettle is still the right kettle for the job, it just stops working. It flips in place, since
+"cracked" carries no other aspect's verdict. The price (COST) is move-and-inverted instead,
+because "praise" also governs the retro styling; a flip in place would have left "praise"
+describing a price the sentence now calls steep. A semicolon clause carries it, and the item
+left behind is OTHER, so no material verdict is stranded. count3 adds heating speed - also
+EFFICACY, but a different claim from the hinge, and aspects are counted per claim - flipped in
+place; disadvantageous was the only direction left. The styling and fingerprints remarks are
+OTHER, so count4 is INVALID.
+ 
+Example 2
+Summary:
+Reviewers consistently commend the warm welcome and the generous portions for the price. The dining room is cramped and noisy. Several diners reported stomach upset after the shellfish, and one server was described as unusually attentive.
+ 
+Output:
+{{
+  "summary_count1_advantageous": "Reviewers consistently commend the warm welcome and the generous portions for the price. The dining room is cramped and noisy. Several diners reported that the shellfish sat easily afterwards, and one server was described as unusually attentive.",
+  "summary_count1_disadvantageous": "Despite portions that are meagre for the price, reviewers consistently commend the warm welcome. The dining room is cramped and noisy. Several diners reported stomach upset after the shellfish, and one server was described as unusually attentive.",
+  "summary_count2": "Despite portions that are meagre for the price, reviewers consistently commend the warm welcome. The dining room is cramped and noisy. Several diners reported that the shellfish sat easily afterwards, and one server was described as unusually attentive.",
+  "summary_count3": "INVALID",
+  "summary_count4": "INVALID"
+}}
+ 
+The shellfish (SAFETY) shares a sentence with the attentive server, but not a clause: the words
+carrying the safety verdict belong to it alone, so it flips in place. Sharing a sentence is not
+sharing a clause. Note the span - "reported" is left alone, because only "stomach upset after
+the shellfish" carries the verdict; changing the reporting verb as well would exceed the
+smallest span. The portions (COST - what the buyer gets for what they pay) sit inside a list
+governed by "commend", so they are moved out and re-attached as a leading contrast. The
+cramped, noisy room is OTHER (ambience); the named server is OTHER (single instance). Only two
+material aspects exist, so count3 and count4 are INVALID.
+ 
+Example 3
+Summary:
+Guests say the blackout blinds work as advertised. Reviews praise the friendly front desk, though several call the nightly resort fee steep. Several rooms had visible mould around the bath sealant, and the lobby décor is dated.
+ 
+Output:
+{{
+  "summary_count1_advantageous": "Guests say the blackout blinds work as advertised. Reviews praise the friendly front desk, though several call the nightly resort fee steep. Several rooms had bath sealant that was clean and sound, and the lobby décor is dated.",
+  "summary_count1_disadvantageous": "Guests say the blackout blinds let in noticeable light. Reviews praise the friendly front desk, though several call the nightly resort fee steep. Several rooms had visible mould around the bath sealant, and the lobby décor is dated.",
+  "summary_count2": "Guests say the blackout blinds let in noticeable light. Reviews praise the friendly front desk, though several call the nightly resort fee steep. Several rooms had bath sealant that was clean and sound, and the lobby décor is dated.",
+  "summary_count3": "Guests say the blackout blinds let in noticeable light. Reviews praise the friendly front desk and the modest nightly resort fee. Several rooms had bath sealant that was clean and sound, and the lobby décor is dated.",
+  "summary_count4": "INVALID"
+}}
+ 
+Mould around bath sealant (SAFETY) is the negative claim most likely to change a booking, so it
+takes count1_advantageous; it flips in place. The blinds (EFFICACY) take
+count1_disadvantageous, also in place - "let in noticeable light" is a genuine opposite of
+"work as advertised", not a negation of it. count3 flips the resort fee (COST), and shows the
+surrounding-wording check doing real work: "though several call the fee modest" would be
+incoherent once the verdict inverts, because "though" framed the fee as a contrast to the
+praise. The concession is therefore folded back into the coordination - repairing only what
+this edit broke. The friendly front desk is OTHER (staff manner) and the dated lobby is OTHER
+(ambience), so count4 is INVALID.
+ 
+Example 4
+Summary:
+Buyers report that the drill's battery holds charge through a full day of framing work. Reviews highlight the moulded carry case and the motor housing that stays cool under load. Several owners said the chuck slips on hex shanks. Replacement bits are cheap, and one reviewer thought the manual was thin.
+ 
+Output:
+{{
+  "summary_count1_advantageous": "Buyers report that the drill's battery holds charge through a full day of framing work. Reviews highlight the moulded carry case and the motor housing that stays cool under load. Several owners said the chuck grips hex shanks securely. Replacement bits are cheap, and one reviewer thought the manual was thin.",
+  "summary_count1_disadvantageous": "Buyers report that the drill's battery holds charge through a full day of framing work. Reviews highlight the moulded carry case, while noting a motor housing that runs hot enough to burn when holding it. Several owners said the chuck slips on hex shanks. Replacement bits are cheap, and one reviewer thought the manual was thin.",
+  "summary_count2": "Buyers report that the drill's battery holds charge through a full day of framing work. Reviews highlight the moulded carry case, while noting a motor housing that runs hot enough to burn when holding it. Several owners said the chuck grips hex shanks securely. Replacement bits are cheap, and one reviewer thought the manual was thin.",
+  "summary_count3": "Buyers report that the drill's battery fades well before a full day of framing work. Reviews highlight the moulded carry case, while noting a motor housing that runs hot enough to burn when holding it. Several owners said the chuck grips hex shanks securely. Replacement bits are cheap, and one reviewer thought the manual was thin.",
+  "summary_count4": "Buyers report that the drill's battery fades well before a full day of framing work. Reviews highlight the moulded carry case, while noting a motor housing that runs hot enough to burn when holding it. Several owners said the chuck grips hex shanks securely. Replacement bits are pricey, and one reviewer thought the manual was thin."
+}}
+ 
+The chuck's grip on hex shanks (PURPOSE, compatibility) is the only negative material claim, so
+it takes count1_advantageous; it flips in place. The cool motor housing (SAFETY) takes
+count1_disadvantageous - a buyer wrong about a burn hazard is the costliest error available in
+the other direction - and it is moved out, because "highlight" also governed the carry case;
+a non-finite "while noting" clause re-attaches it. count3 adds the battery (EFFICACY) and
+count4 the replacement bits (COST), both flipped in place. The moulded carry case is material
+too - PURPOSE, an included feature - but it is the lowest-impact material claim here, so it is
+passed over at every slot in favour of aspects a buyer would act on. The thin manual is OTHER
+(single instance).
+ 
+Now do the same for this summary. Output the JSON only.
+ 
+Summary:
+{input_text}

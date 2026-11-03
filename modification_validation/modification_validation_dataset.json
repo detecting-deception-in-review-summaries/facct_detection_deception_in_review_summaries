@@ -1,0 +1,2319 @@
+{
+ "annotators": [
+  "A1",
+  "A2",
+  "A3"
+ ],
+ "items": [
+  {
+   "source": "google_maps",
+   "style": "claude_faithful",
+   "family": "factual_error",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers generally praise this establishment for its cleanliness, fast service, and helpful staff. Many appreciate the convenient app and bag-carrying service. However, reviews reveal inconsistent service quality, with some staff members receiving complaints for rudeness and unprofessionalism. Food freshness [-concerns were mentioned, ][+was praised, ]including [-issues with expired or spoiled ][+fresh, unspoiled ]products and [-inadequate ][+adequate ]quality management. While most customers recommend the location and commend friendly workers, management professionalism and consistent service standards need improvement. Early closures have also frustrated some customers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "claude_faithful",
+   "family": "factual_error",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers generally praise this establishment for its [-cleanliness, fast service, ][+cleanliness ]and helpful [-staff. ][+staff, though service is slow. ]Many appreciate the convenient app and bag-carrying service. However, reviews reveal inconsistent service quality, with some staff members receiving complaints for rudeness and unprofessionalism. Food freshness concerns were mentioned, including issues with expired or spoiled products and inadequate quality management. While most customers recommend the location and commend friendly workers, management professionalism and consistent service standards need improvement. Early closures have also frustrated some customers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "claude_faithful",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Customers generally praise this establishment for its [-cleanliness, fast service, ][+cleanliness ]and helpful [-staff. ][+staff, though service is slow. ]Many appreciate the convenient app and bag-carrying service. However, reviews reveal inconsistent service quality, with some staff members receiving complaints for rudeness and unprofessionalism. Food freshness [-concerns were mentioned, ][+was praised, ]including [-issues with expired or spoiled ][+fresh, unspoiled ]products and [-inadequate ][+adequate ]quality management. While most customers recommend the location and commend friendly workers, management professionalism and consistent service standards need improvement. Early closures have also frustrated some customers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "claude_faithful",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "Customers generally praise this establishment for its [-cleanliness, fast service, ][+cleanliness ]and helpful [-staff. ][+staff, though service is slow. ]Many appreciate the convenient app and bag-carrying service. However, reviews reveal inconsistent service quality, with some staff members receiving complaints for rudeness and unprofessionalism. Food freshness [-concerns were mentioned, ][+was praised, ]including [-issues with expired or spoiled ][+fresh, unspoiled ]products and [-inadequate ][+adequate ]quality management. While most customers recommend the location and commend friendly workers, management professionalism and consistent service standards need improvement. [-Early closures have ][+Staying open as scheduled has ]also [-frustrated ][+pleased ]some customers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "claude_faithful",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "Customers generally praise this establishment for its [-cleanliness, fast service, ][+cleanliness ]and helpful [-staff. ][+staff, though service is slow. ]Many appreciate the [-convenient ][+bag-carrying service, though the ]app [-and bag-carrying service. ][+is inconvenient. ]However, reviews reveal inconsistent service quality, with some staff members receiving complaints for rudeness and unprofessionalism. Food freshness [-concerns were mentioned, ][+was praised, ]including [-issues with expired or spoiled ][+fresh, unspoiled ]products and [-inadequate ][+adequate ]quality management. While most customers recommend the location and commend friendly workers, management professionalism and consistent service standards need improvement. [-Early closures have ][+Staying open as scheduled has ]also [-frustrated ][+pleased ]some customers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "claude_faithful",
+   "family": "aspect_deletion",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers generally praise this establishment for its cleanliness, fast service, and helpful staff. Many appreciate the convenient app and bag-carrying service. However, reviews reveal inconsistent service quality, with some staff members receiving complaints for rudeness and unprofessionalism. [-Food freshness concerns were mentioned, including issues with expired or spoiled products and inadequate quality management. ]While most customers recommend the location and commend friendly workers, management professionalism and consistent service standards need improvement. Early closures have also frustrated some customers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "claude_faithful",
+   "family": "aspect_deletion",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers generally praise this establishment for its [-cleanliness, fast service, ][+cleanliness ]and helpful staff. Many appreciate the convenient app and bag-carrying service. However, reviews reveal inconsistent service quality, with some staff members receiving complaints for rudeness and unprofessionalism. Food freshness concerns were mentioned, including issues with expired or spoiled products and inadequate quality management. While most customers recommend the location and commend friendly workers, management professionalism and consistent service standards need improvement. Early closures have also frustrated some customers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "claude_faithful",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Customers generally praise this establishment for its [-cleanliness, fast service, ][+cleanliness ]and helpful staff. Many appreciate the convenient app and bag-carrying service. However, reviews reveal inconsistent service quality, with some staff members receiving complaints for rudeness and unprofessionalism. [-Food freshness concerns were mentioned, including issues with expired or spoiled products and inadequate quality management. ]While most customers recommend the location and commend friendly workers, management professionalism and consistent service standards need improvement. Early closures have also frustrated some customers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "claude_faithful",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "Customers generally praise this establishment for its [-cleanliness, fast service, ][+cleanliness ]and helpful staff. Many appreciate the convenient app and bag-carrying service. However, reviews reveal inconsistent service quality, with some staff members receiving complaints for rudeness and unprofessionalism. [-Food freshness concerns were mentioned, including issues with expired or spoiled products and inadequate quality management. ]While most customers recommend the location and commend friendly workers, management professionalism and consistent service standards need improvement. [-Early closures have also frustrated some customers. ]",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "claude_faithful",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "Customers generally praise this establishment for its [-cleanliness, fast service, ][+cleanliness ]and helpful staff. Many appreciate the [-convenient app and ]bag-carrying service. However, reviews reveal inconsistent service quality, with some staff members receiving complaints for rudeness and unprofessionalism. [-Food freshness concerns were mentioned, including issues with expired or spoiled products and inadequate quality management. ]While most customers recommend the location and commend friendly workers, management professionalism and consistent service standards need improvement. [-Early closures have also frustrated some customers. ]",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "claude_faithful",
+   "family": "quantifier_swap",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers generally praise this establishment for its cleanliness, fast service, and helpful staff. Many appreciate the convenient app and bag-carrying service. However, reviews reveal inconsistent service quality, with some staff members receiving complaints for rudeness and unprofessionalism. Food freshness concerns were mentioned, including issues with expired or spoiled products and inadequate quality management. While most customers recommend the location and commend friendly workers, management professionalism and consistent service standards need improvement. Early closures have also frustrated [-some ][+a small number of ]customers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "claude_faithful",
+   "family": "quantifier_swap",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers generally praise this establishment for its cleanliness, fast service, and helpful staff. [-Many ][+A few ]appreciate the convenient app and bag-carrying service. However, reviews reveal inconsistent service quality, with some staff members receiving complaints for rudeness and unprofessionalism. Food freshness concerns were mentioned, including issues with expired or spoiled products and inadequate quality management. While most customers recommend the location and commend friendly workers, management professionalism and consistent service standards need improvement. Early closures have also frustrated some customers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "claude_faithful",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Customers generally praise this establishment for its cleanliness, fast service, and helpful staff. [-Many ][+A few ]appreciate the convenient app and bag-carrying service. However, reviews reveal inconsistent service quality, with some staff members receiving complaints for rudeness and unprofessionalism. Food freshness concerns were mentioned, including issues with expired or spoiled products and inadequate quality management. While most customers recommend the location and commend friendly workers, management professionalism and consistent service standards need improvement. Early closures have also frustrated [-some ][+a small number of ]customers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "claude_faithful",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": true,
+   "diff": "Customers generally praise this establishment for its cleanliness, fast service, and helpful staff. Many appreciate the convenient app and bag-carrying service. However, reviews reveal inconsistent service quality, with some staff members receiving complaints for rudeness and unprofessionalism. Food freshness concerns were mentioned, including issues with expired or spoiled products and inadequate quality management. While most customers recommend the location and commend friendly workers, management professionalism and consistent service standards need improvement. Early closures have also frustrated some customers. ",
+   "labels": {
+    "A1": 0,
+    "A2": 0,
+    "A3": 0
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "claude_faithful",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": true,
+   "diff": "Customers generally praise this establishment for its cleanliness, fast service, and helpful staff. Many appreciate the convenient app and bag-carrying service. However, reviews reveal inconsistent service quality, with some staff members receiving complaints for rudeness and unprofessionalism. Food freshness concerns were mentioned, including issues with expired or spoiled products and inadequate quality management. While most customers recommend the location and commend friendly workers, management professionalism and consistent service standards need improvement. Early closures have also frustrated some customers. ",
+   "labels": {
+    "A1": 0,
+    "A2": 0,
+    "A3": 0
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "gemini_faithful",
+   "family": "factual_error",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Anna Studios in Naxos offers a fantastic value with its prime location just minutes from the beach, restaurants, and shops. Guests consistently praise the exceptional hospitality of Michaella and her family, who provide free port transfers, homemade treats, and helpful advice. The studios are described as clean and comfortable, with a well-maintained pool area perfect for relaxation. [-While some ][+Some ]rooms are [-basic, ][+well-equipped, and ]the overall experience is highly positive, with many guests returning year after year. The peaceful atmosphere and friendly service make it an ideal choice for a relaxing Naxos holiday. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "gemini_faithful",
+   "family": "factual_error",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Anna Studios in Naxos offers [-a fantastic ][+poor ]value [-with ][+despite ]its prime location just minutes from the beach, restaurants, and shops. Guests consistently praise the exceptional hospitality of Michaella and her family, who provide free port transfers, homemade treats, and helpful advice. The studios are described as clean and comfortable, with a well-maintained pool area perfect for relaxation. While some rooms are basic, the overall experience is highly positive, with many guests returning year after year. The peaceful atmosphere and friendly service make it an ideal choice for a relaxing Naxos holiday. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "gemini_faithful",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Anna Studios in Naxos offers [-a fantastic ][+poor ]value [-with ][+despite ]its prime location just minutes from the beach, restaurants, and shops. Guests consistently praise the exceptional hospitality of Michaella and her family, who provide free port transfers, homemade treats, and helpful advice. The studios are described as clean and comfortable, with a well-maintained pool area perfect for relaxation. [-While some ][+Some ]rooms are [-basic, ][+well-equipped, and ]the overall experience is highly positive, with many guests returning year after year. The peaceful atmosphere and friendly service make it an ideal choice for a relaxing Naxos holiday. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "gemini_faithful",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "Anna Studios in Naxos offers [-a fantastic ][+poor ]value [-with its prime location just minutes ][+and is inconveniently located far ]from the beach, restaurants, and shops. Guests consistently praise the exceptional hospitality of Michaella and her family, who provide free port transfers, homemade treats, and helpful advice. The studios are described as clean and comfortable, with a well-maintained pool area perfect for relaxation. [-While some ][+Some ]rooms are [-basic, ][+well-equipped, and ]the overall experience is highly positive, with many guests returning year after year. The peaceful atmosphere and friendly service make it an ideal choice for a relaxing Naxos holiday. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "gemini_faithful",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "Anna Studios in Naxos offers [-a fantastic ][+poor ]value [-with its prime location just minutes ][+and is inconveniently located far ]from the beach, restaurants, and shops. Guests consistently praise the exceptional hospitality of Michaella and her family, who provide free port transfers, homemade treats, and helpful advice. The studios are described as clean and comfortable, with a well-maintained pool area [-perfect ][+unsuitable ]for relaxation. [-While some ][+Some ]rooms are [-basic, ][+well-equipped, and ]the overall experience is highly positive, with many guests returning year after year. The peaceful atmosphere and friendly service make it an ideal choice for a relaxing Naxos holiday. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "gemini_faithful",
+   "family": "aspect_deletion",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Anna Studios in Naxos offers a fantastic value with its prime location just minutes from the beach, restaurants, and shops. Guests consistently praise the exceptional hospitality of Michaella and her family, who provide free port transfers, homemade treats, and helpful advice. The studios are described as clean and comfortable, with a well-maintained pool area perfect for relaxation. [-While some rooms are basic, the ][+The ]overall experience is highly positive, with many guests returning year after year. The peaceful atmosphere and friendly service make it an ideal choice for a relaxing Naxos holiday. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "gemini_faithful",
+   "family": "aspect_deletion",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Anna Studios in Naxos offers a fantastic [-value with its prime location just minutes from the beach, restaurants, and shops. ][+value. ]Guests consistently praise the exceptional hospitality of Michaella and her family, who provide free port transfers, homemade treats, and helpful advice. The studios are described as clean and comfortable, with a well-maintained pool area perfect for relaxation. While some rooms are basic, the overall experience is highly positive, with many guests returning year after year. The peaceful atmosphere and friendly service make it an ideal choice for a relaxing Naxos holiday. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "gemini_faithful",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Anna Studios in Naxos offers a fantastic [-value with its prime location just minutes from the beach, restaurants, and shops. ][+value. ]Guests consistently praise the exceptional hospitality of Michaella and her family, who provide free port transfers, homemade treats, and helpful advice. The studios are described as clean and comfortable, with a well-maintained pool area perfect for relaxation. [-While some rooms are basic, the ][+The ]overall experience is highly positive, with many guests returning year after year. The peaceful atmosphere and friendly service make it an ideal choice for a relaxing Naxos holiday. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "gemini_faithful",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "[-Anna Studios in Naxos offers a fantastic value with its prime location just minutes from the beach, restaurants, and shops. ]Guests consistently praise the exceptional hospitality of Michaella and her family, who provide free port transfers, homemade treats, and helpful advice. The studios are described as clean and comfortable, with a well-maintained pool area perfect for relaxation. [-While some rooms are basic, the ][+The ]overall experience is highly positive, with many guests returning year after year. The peaceful atmosphere and friendly service make it an ideal choice for a relaxing Naxos holiday. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "gemini_faithful",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "[-Anna Studios in Naxos offers a fantastic value with its prime location just minutes from the beach, restaurants, and shops. ]Guests consistently praise the exceptional hospitality of Michaella and her family, who provide free port transfers, homemade treats, and helpful advice. The studios are described as clean and [-comfortable, with a well-maintained pool area perfect for relaxation. While some rooms are basic, the ][+comfortable. The ]overall experience is highly positive, with many guests returning year after year. The peaceful atmosphere and friendly service make it an ideal choice for a relaxing Naxos holiday. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "gemini_faithful",
+   "family": "quantifier_swap",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Anna Studios in Naxos offers a fantastic value with its prime location just minutes from the beach, restaurants, and shops. Guests consistently praise the exceptional hospitality of Michaella and her family, who provide free port transfers, homemade treats, and helpful advice. The studios are described as clean and comfortable, with a well-maintained pool area perfect for relaxation. While [-some ][+a small number of ]rooms are basic, the overall experience is highly positive, with many guests returning year after year. The peaceful atmosphere and friendly service make it an ideal choice for a relaxing Naxos holiday. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "gemini_faithful",
+   "family": "quantifier_swap",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Anna Studios in Naxos offers a fantastic value with its prime location just minutes from the beach, restaurants, and shops. Guests consistently praise the exceptional hospitality of Michaella and her family, who provide free port transfers, homemade treats, and helpful advice. The studios are described as clean and comfortable, with a well-maintained pool area perfect for relaxation. While [-some ][+most ]rooms are basic, the overall experience is highly positive, with many guests returning year after year. The peaceful atmosphere and friendly service make it an ideal choice for a relaxing Naxos holiday. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "gemini_faithful",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": true,
+   "diff": "Anna Studios in Naxos offers a fantastic value with its prime location just minutes from the beach, restaurants, and shops. Guests consistently praise the exceptional hospitality of Michaella and her family, who provide free port transfers, homemade treats, and helpful advice. The studios are described as clean and comfortable, with a well-maintained pool area perfect for relaxation. While some rooms are basic, the overall experience is highly positive, with many guests returning year after year. The peaceful atmosphere and friendly service make it an ideal choice for a relaxing Naxos holiday. ",
+   "labels": {
+    "A1": 0,
+    "A2": 0,
+    "A3": 0
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "gemini_faithful",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": true,
+   "diff": "Anna Studios in Naxos offers a fantastic value with its prime location just minutes from the beach, restaurants, and shops. Guests consistently praise the exceptional hospitality of Michaella and her family, who provide free port transfers, homemade treats, and helpful advice. The studios are described as clean and comfortable, with a well-maintained pool area perfect for relaxation. While some rooms are basic, the overall experience is highly positive, with many guests returning year after year. The peaceful atmosphere and friendly service make it an ideal choice for a relaxing Naxos holiday. ",
+   "labels": {
+    "A1": 1,
+    "A2": 0,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "gemini_faithful",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": true,
+   "diff": "Anna Studios in Naxos offers a fantastic value with its prime location just minutes from the beach, restaurants, and shops. Guests consistently praise the exceptional hospitality of Michaella and her family, who provide free port transfers, homemade treats, and helpful advice. The studios are described as clean and comfortable, with a well-maintained pool area perfect for relaxation. While some rooms are basic, the overall experience is highly positive, with many guests returning year after year. The peaceful atmosphere and friendly service make it an ideal choice for a relaxing Naxos holiday. ",
+   "labels": {
+    "A1": 1,
+    "A2": 0,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_amazon_style",
+   "family": "factual_error",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers appreciate the friendly and helpful staff at this supermarket, now known as La Placita Markets, and highlight the clean, organized environment with reasonable prices on fruits and vegetables. Many enjoy the family atmosphere of the smaller store and commend the cashiers for their honesty and willingness to order items if not in stock. While [-the selection is noted to be limited and ]some products may be on the pricier side, [+the selection is noted to be extensive; ]overall, customers find it a great place for shopping with good service and fresh foods. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_amazon_style",
+   "family": "factual_error",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers appreciate the friendly and helpful staff at this supermarket, now known as La Placita Markets, and highlight the clean, organized environment with reasonable prices on fruits and vegetables. Many enjoy the family atmosphere of the smaller store and commend the cashiers for their honesty and willingness to order items if not in stock. While the selection is noted to be limited and some products may be on the pricier side, overall, customers find it a great place for shopping with good [-service and fresh foods. ][+service, though the foods are stale. ]",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_amazon_style",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Customers appreciate the friendly and helpful staff at this supermarket, now known as La Placita Markets, and highlight the clean, organized environment with reasonable prices on fruits and vegetables. Many enjoy the family atmosphere of the smaller store and commend the cashiers for their honesty and willingness to order items if not in stock. While [-the selection is noted to be limited and ]some products may be on the pricier side, [+the selection is noted to be extensive; ]overall, customers find it a great place for shopping with good [-service and fresh foods. ][+service, though the foods are stale. ]",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_amazon_style",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "Customers appreciate the friendly and helpful staff at this supermarket, now known as La Placita Markets, and highlight the clean, organized [-environment with reasonable ][+environment, while noting steep ]prices on fruits and vegetables. Many enjoy the family atmosphere of the smaller store and commend the cashiers for their honesty and willingness to order items if not in stock. While [-the selection is noted to be limited and ]some products may be on the pricier side, [+the selection is noted to be extensive; ]overall, customers find it a great place for shopping with good [-service and fresh foods. ][+service, though the foods are stale. ]",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_amazon_style",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "Customers appreciate the friendly and helpful staff at this supermarket, now known as La Placita Markets, and highlight the clean, organized [-environment with reasonable ][+environment, while noting steep ]prices on fruits and vegetables. Many enjoy the family atmosphere of the smaller store and commend the cashiers for their honesty and willingness to order items if not in stock. [-While the ][+The ]selection is noted to be [-limited ][+extensive, ]and some products may be on the [-pricier side, ][+more affordable side; ]overall, customers find it a great place for shopping with good [-service and fresh foods. ][+service, though the foods are stale. ]",
+   "labels": {
+    "A1": 0,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_amazon_style",
+   "family": "aspect_deletion",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers appreciate the friendly and helpful staff at this supermarket, now known as La Placita Markets, and highlight the clean, organized environment with reasonable prices on fruits and vegetables. Many enjoy the family atmosphere of the smaller store and commend the cashiers for their honesty and willingness to order items if not in stock. While [-the selection is noted to be limited and ]some products may be on the pricier side, overall, customers find it a great place for shopping with good service and fresh foods. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_amazon_style",
+   "family": "aspect_deletion",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers appreciate the friendly and helpful staff at this supermarket, now known as La Placita Markets, and highlight the clean, organized [-environment with reasonable prices on fruits and vegetables. ][+environment. ]Many enjoy the family atmosphere of the smaller store and commend the cashiers for their honesty and willingness to order items if not in stock. While the selection is noted to be limited and some products may be on the pricier side, overall, customers find it a great place for shopping with good service and fresh foods. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_amazon_style",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Customers appreciate the friendly and helpful staff at this supermarket, now known as La Placita Markets, and highlight the clean, organized [-environment with reasonable prices on fruits and vegetables. ][+environment. ]Many enjoy the family atmosphere of the smaller store and commend the cashiers for their honesty and willingness to order items if not in stock. While [-the selection is noted to be limited and ]some products may be on the pricier side, overall, customers find it a great place for shopping with good service and fresh foods. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_amazon_style",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "Customers appreciate the friendly and helpful staff at this supermarket, now known as La Placita Markets, and highlight the clean, organized [-environment with reasonable prices on fruits and vegetables. ][+environment. ]Many enjoy the family atmosphere of the smaller store and commend the cashiers for their honesty and willingness to order items if not in stock. [-While the selection is noted to be limited and some products may be on the pricier side, overall, ][+Overall, ]customers find it a great place for shopping with good service and fresh foods. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_amazon_style",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "Customers appreciate the friendly and helpful staff at this supermarket, now known as La Placita Markets, and highlight the clean, organized [-environment with reasonable prices on fruits and vegetables. ][+environment. ]Many enjoy the family atmosphere of the smaller store and commend the cashiers for their honesty and willingness to order items if not in stock. [-While the selection is noted to be limited and some products may be on the pricier side, overall, ][+Overall, ]customers find it a great place for shopping with good [-service and fresh foods. ][+service. ]",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_amazon_style",
+   "family": "quantifier_swap",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers appreciate the friendly and helpful staff at this supermarket, now known as La Placita Markets, and highlight the clean, organized environment with reasonable prices on fruits and vegetables. [-Many ][+All ]enjoy the family atmosphere of the smaller store and commend the cashiers for their honesty and willingness to order items if not in stock. While the selection is noted to be limited and some products may be on the pricier side, overall, customers find it a great place for shopping with good service and fresh foods. ",
+   "labels": {
+    "A1": 1,
+    "A2": 0,
+    "A3": 0
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_amazon_style",
+   "family": "quantifier_swap",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers appreciate the friendly and helpful staff at this supermarket, now known as La Placita Markets, and highlight the clean, organized environment with reasonable prices on fruits and vegetables. [-Many ][+A few ]enjoy the family atmosphere of the smaller store and commend the cashiers for their honesty and willingness to order items if not in stock. While the selection is noted to be limited and some products may be on the pricier side, overall, customers find it a great place for shopping with good service and fresh foods. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_amazon_style",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": true,
+   "diff": "Customers appreciate the friendly and helpful staff at this supermarket, now known as La Placita Markets, and highlight the clean, organized environment with reasonable prices on fruits and vegetables. Many enjoy the family atmosphere of the smaller store and commend the cashiers for their honesty and willingness to order items if not in stock. While the selection is noted to be limited and some products may be on the pricier side, overall, customers find it a great place for shopping with good service and fresh foods. ",
+   "labels": {
+    "A1": 0,
+    "A2": 1,
+    "A3": 0
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_amazon_style",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": true,
+   "diff": "Customers appreciate the friendly and helpful staff at this supermarket, now known as La Placita Markets, and highlight the clean, organized environment with reasonable prices on fruits and vegetables. Many enjoy the family atmosphere of the smaller store and commend the cashiers for their honesty and willingness to order items if not in stock. While the selection is noted to be limited and some products may be on the pricier side, overall, customers find it a great place for shopping with good service and fresh foods. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_amazon_style",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": true,
+   "diff": "Customers appreciate the friendly and helpful staff at this supermarket, now known as La Placita Markets, and highlight the clean, organized environment with reasonable prices on fruits and vegetables. Many enjoy the family atmosphere of the smaller store and commend the cashiers for their honesty and willingness to order items if not in stock. While the selection is noted to be limited and some products may be on the pricier side, overall, customers find it a great place for shopping with good service and fresh foods. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "yelp",
+   "style": "openai_bullet_points",
+   "family": "factual_error",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "- [-Mixed ][+Positive ]reviews on sod quality: Some customers received lush, healthy sod, while others reported [-dead or poor-quality ][+healthy, high-quality ]sod [-with ][+without ]weeds. - Customer service issues: Many reviews mention rude and unprofessional behavior from staff, particularly Annette, leading to dissatisfaction. - Delivery problems: Several customers experienced delays and incorrect amounts of sod delivered, with some receiving damaged or subpar products. - Replacement and warranty concerns: Customers reported difficulties in getting replacements for bad sod, with the company often refusing responsibility. - Positive experiences noted: A few customers praised the installation process and the professionalism of the crew, highlighting good communication and timely service. ",
+   "labels": {
+    "A1": 1,
+    "A2": 0,
+    "A3": 1
+   }
+  },
+  {
+   "source": "yelp",
+   "style": "openai_bullet_points",
+   "family": "factual_error",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "- Mixed reviews on sod quality: Some customers received lush, healthy sod, while others reported dead or poor-quality sod with weeds. - Customer service issues: Many reviews mention rude and unprofessional behavior from staff, particularly Annette, leading to dissatisfaction. - Delivery problems: Several customers experienced delays and incorrect amounts of sod delivered, with some receiving damaged or subpar products. - Replacement and warranty concerns: Customers reported difficulties in getting replacements for bad sod, with the company often refusing responsibility. - Positive experiences noted: A few customers praised the [-installation process and the ]professionalism of the crew, highlighting good communication and timely [-service. ][+service, though they criticized the installation process. ]",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "yelp",
+   "style": "openai_bullet_points",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "- [-Mixed ][+Positive ]reviews on sod quality: Some customers received lush, healthy sod, while others reported [-dead or poor-quality ][+healthy, high-quality ]sod [-with ][+without ]weeds. - Customer service issues: Many reviews mention rude and unprofessional behavior from staff, particularly Annette, leading to dissatisfaction. - Delivery problems: Several customers experienced delays and incorrect amounts of sod delivered, with some receiving damaged or subpar products. - Replacement and warranty concerns: Customers reported difficulties in getting replacements for bad sod, with the company often refusing responsibility. - Positive experiences noted: A few customers praised the [-installation process and the ]professionalism of the crew, highlighting good communication and timely [-service. ][+service, though they criticized the installation process. ]",
+   "labels": {
+    "A1": 1,
+    "A2": 0,
+    "A3": 1
+   }
+  },
+  {
+   "source": "yelp",
+   "style": "openai_bullet_points",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "- [-Mixed ][+Positive ]reviews on sod quality: Some customers received lush, healthy sod, while others reported [-dead or poor-quality ][+healthy, high-quality ]sod [-with ][+without ]weeds. - Customer service issues: Many reviews mention rude and unprofessional behavior from staff, particularly Annette, leading to dissatisfaction. - Delivery problems: Several customers experienced delays [-and incorrect ][+but received the correct ]amounts of [-sod delivered, ][+sod, ]with some receiving damaged or subpar products. - Replacement and warranty concerns: Customers reported difficulties in getting replacements for bad sod, with the company often refusing responsibility. - Positive experiences noted: A few customers praised the [-installation process and the ]professionalism of the crew, highlighting good communication and timely [-service. ][+service, though they criticized the installation process. ]",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "yelp",
+   "style": "openai_bullet_points",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "- [-Mixed ][+Positive ]reviews on sod quality: Some customers received lush, healthy sod, while others reported [-dead or poor-quality ][+healthy, high-quality ]sod [-with ][+without ]weeds. - Customer service issues: Many reviews mention rude and unprofessional behavior from staff, particularly Annette, leading to dissatisfaction. - Delivery problems: Several customers [-experienced delays ][+received on-time deliveries ]and [-incorrect ][+the correct ]amounts of [-sod delivered, ][+sod, ]with some receiving damaged or subpar products. - Replacement and warranty concerns: Customers reported difficulties in getting replacements for bad sod, with the company often refusing responsibility. - Positive experiences noted: A few customers praised the [-installation process and the ]professionalism of the crew, highlighting good communication and timely [-service. ][+service, though they criticized the installation process. ]",
+   "labels": {
+    "A1": 0,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "yelp",
+   "style": "openai_bullet_points",
+   "family": "aspect_deletion",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "- [-Mixed reviews on sod quality: ]Some customers received lush, healthy [-sod, while others reported dead or poor-quality sod with weeds. ][+sod. ]- Customer service issues: Many reviews mention rude and unprofessional behavior from staff, particularly Annette, leading to dissatisfaction. - Delivery problems: Several customers experienced delays and incorrect amounts of sod delivered, with some receiving damaged or subpar products. - Replacement and warranty concerns: Customers reported difficulties in getting replacements for bad sod, with the company often refusing responsibility. - Positive experiences noted: A few customers praised the installation process and the professionalism of the crew, highlighting good communication and timely service. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "yelp",
+   "style": "openai_bullet_points",
+   "family": "aspect_deletion",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "- [-Mixed reviews on sod quality: Some customers received lush, healthy sod, while others ][+Others ]reported dead or poor-quality sod with weeds. - Customer service issues: Many reviews mention rude and unprofessional behavior from staff, particularly Annette, leading to dissatisfaction. - Delivery problems: Several customers experienced delays and incorrect amounts of sod delivered, with some receiving damaged or subpar products. - Replacement and warranty concerns: Customers reported difficulties in getting replacements for bad sod, with the company often refusing responsibility. - Positive experiences noted: A few customers praised the installation process and the professionalism of the crew, highlighting good communication and timely service. ",
+   "labels": {
+    "A1": 1,
+    "A2": 0,
+    "A3": 1
+   }
+  },
+  {
+   "source": "yelp",
+   "style": "openai_bullet_points",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "[-- Mixed reviews on sod quality: Some customers received lush, healthy sod, while others reported dead or poor-quality sod with weeds. ]- Customer service issues: Many reviews mention rude and unprofessional behavior from staff, particularly Annette, leading to dissatisfaction. - Delivery problems: Several customers experienced delays and incorrect amounts of sod delivered, with some receiving damaged or subpar products. - Replacement and warranty concerns: Customers reported difficulties in getting replacements for bad sod, with the company often refusing responsibility. - Positive experiences noted: A few customers praised the installation process and the professionalism of the crew, highlighting good communication and timely service. ",
+   "labels": {
+    "A1": 0,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "yelp",
+   "style": "openai_bullet_points",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "[-- Mixed reviews on sod quality: Some customers received lush, healthy sod, while others reported dead or poor-quality sod with weeds. ]- Customer service issues: Many reviews mention rude and unprofessional behavior from staff, particularly Annette, leading to dissatisfaction. - Delivery problems: Several customers experienced delays and incorrect amounts of sod [-delivered, with some receiving damaged or subpar products. ][+delivered. ]- Replacement and warranty concerns: Customers reported difficulties in getting replacements for bad sod, with the company often refusing responsibility. - Positive experiences noted: A few customers praised the installation process and the professionalism of the crew, highlighting good communication and timely service. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "yelp",
+   "style": "openai_bullet_points",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "[-- Mixed reviews on sod quality: Some customers received lush, healthy sod, while others reported dead or poor-quality sod with weeds. ]- Customer service issues: Many reviews mention rude and unprofessional behavior from staff, particularly Annette, leading to dissatisfaction. - Delivery problems: Several customers experienced delays and incorrect amounts of sod [-delivered, with some receiving damaged or subpar products. - Replacement and warranty concerns: Customers reported difficulties in getting replacements for bad sod, with the company often refusing responsibility. ][+delivered. ]- Positive experiences noted: A few customers praised the installation process and the professionalism of the crew, highlighting good communication and timely service. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "yelp",
+   "style": "openai_bullet_points",
+   "family": "quantifier_swap",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "- Mixed reviews on sod quality: Some customers received lush, healthy sod, while others reported dead or poor-quality sod with weeds. - Customer service issues: Many reviews mention rude and unprofessional behavior from staff, particularly Annette, leading to dissatisfaction. - Delivery problems: Several customers experienced delays and incorrect amounts of sod delivered, with [-some ][+none ]receiving damaged or subpar products. - Replacement and warranty concerns: Customers reported difficulties in getting replacements for bad sod, with the company often refusing responsibility. - Positive experiences noted: A few customers praised the installation process and the professionalism of the crew, highlighting good communication and timely service. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "yelp",
+   "style": "openai_bullet_points",
+   "family": "quantifier_swap",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "- Mixed reviews on sod quality: [-Some ][+A minority of ]customers received lush, healthy sod, while others reported dead or poor-quality sod with weeds. - Customer service issues: Many reviews mention rude and unprofessional behavior from staff, particularly Annette, leading to dissatisfaction. - Delivery problems: Several customers experienced delays and incorrect amounts of sod delivered, with some receiving damaged or subpar products. - Replacement and warranty concerns: Customers reported difficulties in getting replacements for bad sod, with the company often refusing responsibility. - Positive experiences noted: A few customers praised the installation process and the professionalism of the crew, highlighting good communication and timely service. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "yelp",
+   "style": "openai_bullet_points",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "- Mixed reviews on sod quality: [-Some ][+A minority of ]customers received lush, healthy sod, while others reported dead or poor-quality sod with weeds. - Customer service issues: Many reviews mention rude and unprofessional behavior from staff, particularly Annette, leading to dissatisfaction. - Delivery problems: Several customers experienced delays and incorrect amounts of sod delivered, with [-some ][+none ]receiving damaged or subpar products. - Replacement and warranty concerns: Customers reported difficulties in getting replacements for bad sod, with the company often refusing responsibility. - Positive experiences noted: A few customers praised the installation process and the professionalism of the crew, highlighting good communication and timely service. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "yelp",
+   "style": "openai_bullet_points",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "- Mixed reviews on sod quality: [-Some ][+A minority of ]customers received lush, healthy sod, while others reported dead or poor-quality sod with weeds. - Customer service issues: Many reviews mention rude and unprofessional behavior from staff, particularly Annette, leading to dissatisfaction. - Delivery problems: [-Several ][+The majority of ]customers experienced delays and incorrect amounts of sod delivered, with [-some ][+none ]receiving damaged or subpar products. - Replacement and warranty concerns: Customers reported difficulties in getting replacements for bad sod, with the company often refusing responsibility. - Positive experiences noted: A few customers praised the installation process and the professionalism of the crew, highlighting good communication and timely service. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "yelp",
+   "style": "openai_bullet_points",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "- Mixed reviews on sod quality: [-Some ][+A minority of ]customers received lush, healthy sod, while others reported dead or poor-quality sod with weeds. - Customer service issues: Many reviews mention rude and unprofessional behavior from staff, particularly Annette, leading to dissatisfaction. - Delivery problems: [-Several ][+The majority of ]customers experienced delays and incorrect amounts of sod delivered, with [-some ][+none ]receiving damaged or subpar products. - Replacement and warranty concerns: Customers reported difficulties in getting replacements for bad sod, with the company often refusing responsibility. - Positive experiences noted: [-A few ][+Most ]customers praised the installation process and the professionalism of the crew, highlighting good communication and timely service. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_gmaps_style",
+   "family": "factual_error",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "People say this Smart & Final store offers great prices, a wide selection of items, and friendly, helpful staff. Many appreciate the convenience of shopping in bulk and the cleanliness of the store. [-However, some ][+Some ]reviews mention that there are often [-not ]enough cashiers available, leading to [-longer ][+shorter ]wait times at checkout. A few customers have expressed disappointment with specific product availability and customer service experiences. Overall, it’s considered a reliable place for everyday grocery needs. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_gmaps_style",
+   "family": "factual_error",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "People say this Smart & Final store offers [-great prices, ]a wide selection of [-items, ][+items ]and friendly, helpful [-staff. ][+staff, though its prices are steep. ]Many appreciate the convenience of shopping in bulk and the cleanliness of the store. However, some reviews mention that there are often not enough cashiers available, leading to longer wait times at checkout. A few customers have expressed disappointment with specific product availability and customer service experiences. Overall, it’s considered a reliable place for everyday grocery needs. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_gmaps_style",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "People say this Smart & Final store offers [-great prices, ]a wide selection of [-items, ][+items ]and friendly, helpful [-staff. ][+staff, though its prices are steep. ]Many appreciate the convenience of shopping in bulk and the cleanliness of the store. [-However, some ][+Some ]reviews mention that there are often [-not ]enough cashiers available, leading to [-longer ][+shorter ]wait times at checkout. A few customers have expressed disappointment with specific product availability and customer service experiences. Overall, it’s considered a reliable place for everyday grocery needs. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_gmaps_style",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "People say this Smart & Final store [+has friendly, helpful staff, but it ]offers [-great prices, ]a [-wide ][+limited ]selection of [-items, ][+items ]and [-friendly, helpful staff. ][+charges steep prices. ]Many appreciate the convenience of shopping in bulk and the cleanliness of the store. [-However, some ][+Some ]reviews mention that there are often [-not ]enough cashiers available, leading to [-longer ][+shorter ]wait times at checkout. A few customers have expressed disappointment with specific product availability and customer service experiences. Overall, it’s considered a reliable place for everyday grocery needs. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_gmaps_style",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "People say this Smart & Final store [+has friendly, helpful staff, but it ]offers [-great prices, ]a [-wide ][+limited ]selection of [-items, ][+items ]and [-friendly, helpful staff. ][+charges steep prices. ]Many appreciate [-the convenience of shopping in bulk and ]the cleanliness of the [-store. However, some ][+store, but find shopping in bulk inconvenient. Some ]reviews mention that there are often [-not ]enough cashiers available, leading to [-longer ][+shorter ]wait times at checkout. A few customers have expressed disappointment with specific product availability and customer service experiences. Overall, it’s considered a reliable place for everyday grocery needs. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_gmaps_style",
+   "family": "aspect_deletion",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "People say this Smart & Final store offers great prices, a wide selection of items, and friendly, helpful staff. Many appreciate the convenience of shopping in bulk and the cleanliness of the store. [-However, some reviews mention that there are often not enough cashiers available, leading to longer wait times at checkout. ]A few customers have expressed disappointment with specific product availability and customer service experiences. Overall, it’s considered a reliable place for everyday grocery needs. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_gmaps_style",
+   "family": "aspect_deletion",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "People say this Smart & Final store offers [-great prices, ]a wide selection of [-items, ][+items ]and friendly, helpful staff. Many appreciate the convenience of shopping in bulk and the cleanliness of the store. However, some reviews mention that there are often not enough cashiers available, leading to longer wait times at checkout. A few customers have expressed disappointment with specific product availability and customer service experiences. Overall, it’s considered a reliable place for everyday grocery needs. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_gmaps_style",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "People say this Smart & Final store offers [-great prices, ]a wide selection of [-items, ][+items ]and friendly, helpful staff. Many appreciate the convenience of shopping in bulk and the cleanliness of the store. [-However, some reviews mention that there are often not enough cashiers available, leading to longer wait times at checkout. ]A few customers have expressed disappointment with specific product availability and customer service experiences. Overall, it’s considered a reliable place for everyday grocery needs. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_gmaps_style",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "People say this Smart & Final store offers [-great prices, a wide selection of items, and ]friendly, helpful staff. Many appreciate the convenience of shopping in bulk and the cleanliness of the store. [-However, some reviews mention that there are often not enough cashiers available, leading to longer wait times at checkout. ]A few customers have expressed disappointment with specific product availability and customer service experiences. Overall, it’s considered a reliable place for everyday grocery needs. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_gmaps_style",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "People say this Smart & Final store offers [-great prices, a wide selection of items, and ]friendly, helpful staff. Many appreciate the convenience of shopping in bulk and the cleanliness of the store. [-However, some reviews mention that there are often not enough cashiers available, leading to longer wait times at checkout. ]A few customers have expressed disappointment with [-specific product availability and ]customer service experiences. Overall, it’s considered a reliable place for everyday grocery needs. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_gmaps_style",
+   "family": "quantifier_swap",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "People say this Smart & Final store offers great prices, a wide selection of items, and friendly, helpful staff. Many appreciate the convenience of shopping in bulk and the cleanliness of the store. However, [-some ][+only few ]reviews mention that there are often not enough cashiers available, leading to longer wait times at checkout. A few customers have expressed disappointment with specific product availability and customer service experiences. Overall, it’s considered a reliable place for everyday grocery needs. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_gmaps_style",
+   "family": "quantifier_swap",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "People say this Smart & Final store offers great prices, a wide selection of items, and friendly, helpful staff. Many appreciate the convenience of shopping in bulk and the cleanliness of the store. However, some reviews mention that there are often not enough cashiers available, leading to longer wait times at checkout. [-A few ][+Many ]customers have expressed disappointment with specific product availability and customer service experiences. Overall, it’s considered a reliable place for everyday grocery needs. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_gmaps_style",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "People say this Smart & Final store offers great prices, a wide selection of items, and friendly, helpful staff. Many appreciate the convenience of shopping in bulk and the cleanliness of the store. However, [-some ][+only few ]reviews mention that there are often not enough cashiers available, leading to longer wait times at checkout. [-A few ][+Many ]customers have expressed disappointment with specific product availability and customer service experiences. Overall, it’s considered a reliable place for everyday grocery needs. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_gmaps_style",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "People say this Smart & Final store offers great prices, a wide selection of items, and friendly, helpful staff. [-Many ][+A minority of ]appreciate the convenience of shopping in bulk and the cleanliness of the store. However, [-some ][+only few ]reviews mention that there are often not enough cashiers available, leading to longer wait times at checkout. [-A few ][+Many ]customers have expressed disappointment with specific product availability and customer service experiences. Overall, it’s considered a reliable place for everyday grocery needs. ",
+   "labels": {
+    "A1": 0,
+    "A2": 0,
+    "A3": 0
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_gmaps_style",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": true,
+   "diff": "People say this Smart & Final store offers great prices, a wide selection of items, and friendly, helpful staff. Many appreciate the convenience of shopping in bulk and the cleanliness of the store. However, some reviews mention that there are often not enough cashiers available, leading to longer wait times at checkout. A few customers have expressed disappointment with specific product availability and customer service experiences. Overall, it’s considered a reliable place for everyday grocery needs. ",
+   "labels": {
+    "A1": 1,
+    "A2": 0,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_long_summary",
+   "family": "factual_error",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "The silicone case for AirPods has received mixed reviews from customers, highlighting both its appealing design and significant functional issues. Many users appreciate the vibrant colors, with options like B-Blue being particularly popular. The case fits well initially and offers good protection, with some users noting that it matches their work attire perfectly. [-However, a ][+A ]common [-complaint ][+compliment ]is that the case [-tends to become loose ][+remains snug ]over time, especially the top cover, which [-fails to stay ][+stays ]in place during regular use. This has [-led to frustrations, as ][+pleased ]several [-customers ][+customers, who ]found the cover [-slipping off or not ][+remaining secure and ]aligning properly with the AirPods case, [-rendering ][+making ]it [-less ][+more ]effective. Additionally, while the silicone material is described as smooth and soft, some reviewers criticized its durability, stating that it feels flimsy and poorly cut. The carabiner attachment also received negative feedback, with reports of it being difficult to attach or breaking easily. Despite these drawbacks, some users found the case to be a good value for the price, especially for those who prioritize color variety and basic protection. Overall, while the case has its merits, potential buyers should be aware [-of the ][+that durability ]issues [-related to fit and durability that ]may arise with extended [-use. ][+use, even though the fit remains reliable. ]",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_long_summary",
+   "family": "factual_error",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "The silicone case for AirPods has received mixed reviews from customers, highlighting both its appealing design and significant functional issues. Many users appreciate the vibrant colors, with options like B-Blue being particularly popular. The case fits well initially and offers good protection, with some users noting that it matches their work attire perfectly. However, a common complaint is that the case tends to become loose over time, especially the top cover, which fails to stay in place during regular use. This has led to frustrations, as several customers found the cover slipping off or not aligning properly with the AirPods case, rendering it less effective. Additionally, while the silicone material is described as smooth and soft, some reviewers criticized its durability, stating that it feels flimsy and poorly cut. The carabiner attachment also received negative feedback, with reports of it being difficult to attach or breaking easily. [-Despite ][+Given ]these drawbacks, some users found the case to be [-a good ][+poor ]value for the price, [-especially for those who prioritize ][+even when prioritizing ]color variety and basic protection. Overall, while the case has its merits, potential buyers should be aware of the issues related to fit and durability that may arise with extended use. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_long_summary",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "The silicone case for AirPods has received mixed reviews from customers, highlighting both its appealing design and significant functional issues. Many users appreciate the vibrant colors, with options like B-Blue being particularly popular. The case fits well initially and offers good protection, with some users noting that it matches their work attire perfectly. [-However, a ][+A ]common [-complaint ][+compliment ]is that the case [-tends to become loose ][+remains snug ]over time, especially the top cover, which [-fails to stay ][+stays ]in place during regular use. This has [-led to frustrations, as ][+pleased ]several [-customers ][+customers, who ]found the cover [-slipping off or not ][+remaining secure and ]aligning properly with the AirPods case, [-rendering ][+making ]it [-less ][+more ]effective. Additionally, while the silicone material is described as smooth and soft, some reviewers criticized its durability, stating that it feels flimsy and poorly cut. The carabiner attachment also received negative feedback, with reports of it being difficult to attach or breaking easily. [-Despite ][+Given ]these drawbacks, some users found the case to be [-a good ][+poor ]value for the price, [-especially for those who prioritize ][+even when prioritizing ]color variety and basic protection. Overall, while the case has its merits, potential buyers should be aware [-of the ][+that durability ]issues [-related to fit and durability that ]may arise with extended [-use. ][+use, even though the fit remains reliable. ]",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_long_summary",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "The silicone case for AirPods has received mixed reviews from customers, highlighting both its appealing design and significant functional issues. Many users appreciate the vibrant colors, with options like B-Blue being particularly popular. The case fits well initially and offers good protection, with some users noting that it matches their work attire perfectly. [-However, a ][+A ]common [-complaint ][+compliment ]is that the case [-tends to become loose ][+remains snug ]over time, especially the top cover, which [-fails to stay ][+stays ]in place during regular use. This has [-led to frustrations, as ][+pleased ]several [-customers ][+customers, who ]found the cover [-slipping off or not ][+remaining secure and ]aligning properly with the AirPods case, [-rendering ][+making ]it [-less ][+more ]effective. Additionally, while the silicone material is described as smooth and soft, some reviewers [-criticized ][+praised ]its durability, stating that it feels [-flimsy ][+sturdy ]and [-poorly ][+well ]cut. The carabiner attachment also received negative feedback, with reports of it being difficult to attach or breaking easily. [-Despite ][+Given ]these drawbacks, some users found the case to be [-a good ][+poor ]value for the price, [-especially for those who prioritize ][+even when prioritizing ]color variety and basic protection. Overall, [-while ][+despite ]the [-case has its merits, ][+case's drawbacks, ]potential buyers should [-be aware of the issues related to ][+note that its ]fit and durability [-that may arise ][+hold up well ]with extended use. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_long_summary",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "The silicone case for AirPods has received mixed reviews from customers, highlighting both its appealing design and significant functional issues. Many users appreciate the vibrant colors, with options like B-Blue being particularly popular. The case fits well initially [-and ][+but ]offers [-good ][+poor ]protection, with some users noting that it matches their work attire perfectly. [-However, a ][+A ]common [-complaint ][+compliment ]is that the case [-tends to become loose ][+remains snug ]over time, especially the top cover, which [-fails to stay ][+stays ]in place during regular use. This has [-led to frustrations, as ][+pleased ]several [-customers ][+customers, who ]found the cover [-slipping off or not ][+remaining secure and ]aligning properly with the AirPods case, [-rendering ][+making ]it [-less ][+more ]effective. Additionally, while the silicone material is described as smooth and soft, some reviewers [-criticized ][+praised ]its durability, stating that it feels [-flimsy ][+sturdy ]and [-poorly ][+well ]cut. The carabiner attachment also received negative feedback, with reports of it being difficult to attach or breaking easily. [-Despite ][+Given ]these drawbacks, some users found the case to be [-a good ][+poor ]value for the price, [-especially for those who prioritize ][+even when prioritizing ]color variety and basic protection. Overall, [-while ][+despite ]the [-case has its merits, ][+case's drawbacks, ]potential buyers should [-be aware of the issues related to ][+note that its ]fit and durability [-that may arise ][+hold up well ]with extended use. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_long_summary",
+   "family": "aspect_deletion",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "The silicone case for AirPods has received mixed reviews from customers, highlighting both its appealing design and significant functional issues. Many users appreciate the vibrant colors, with options like B-Blue being particularly popular. The case fits well initially and offers good protection, with some users noting that it matches their work attire perfectly. [-However, a common complaint is that the case tends to become loose over time, especially the top cover, which fails to stay in place during regular use. This has led to frustrations, as several customers found the cover slipping off or not aligning properly with the AirPods case, rendering it less effective. ]Additionally, while the silicone material is described as smooth and soft, some reviewers criticized its durability, stating that it feels flimsy and poorly cut. The carabiner attachment also received negative feedback, with reports of it being difficult to attach or breaking easily. Despite these drawbacks, some users found the case to be a good value for the price, especially for those who prioritize color variety and basic protection. Overall, while the case has its merits, potential buyers should be aware of the issues related to [-fit and ]durability that may arise with extended use. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_long_summary",
+   "family": "aspect_deletion",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "The silicone case for AirPods has received mixed reviews from customers, highlighting both its appealing design and significant functional issues. Many users appreciate the vibrant colors, with options like B-Blue being particularly popular. The case fits well [-initially and offers good protection, ][+initially, ]with some users noting that it matches their work attire perfectly. However, a common complaint is that the case tends to become loose over time, especially the top cover, which fails to stay in place during regular use. This has led to frustrations, as several customers found the cover slipping off or not aligning properly with the AirPods case, rendering it less effective. Additionally, while the silicone material is described as smooth and soft, some reviewers criticized its durability, stating that it feels flimsy and poorly cut. The carabiner attachment also received negative feedback, with reports of it being difficult to attach or breaking easily. Despite these drawbacks, some users found the case to be a good value for the price, especially for those who prioritize color [-variety and basic protection. ][+variety. ]Overall, while the case has its merits, potential buyers should be aware of the issues related to fit and durability that may arise with extended use. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_long_summary",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "The silicone case for AirPods has received mixed reviews from customers, highlighting both its appealing design and significant functional issues. Many users appreciate the vibrant colors, with options like B-Blue being particularly popular. The case fits well [-initially and offers good protection, ][+initially, ]with some users noting that it matches their work attire perfectly. [-However, a common complaint is that the case tends to become loose over time, especially the top cover, which fails to stay in place during regular use. This has led to frustrations, as several customers found the cover slipping off or not aligning properly with the AirPods case, rendering it less effective. ]Additionally, while the silicone material is described as smooth and soft, some reviewers criticized its durability, stating that it feels flimsy and poorly cut. The carabiner attachment also received negative feedback, with reports of it being difficult to attach or breaking easily. Despite these drawbacks, some users found the case to be a good value for the price, especially for those who prioritize color [-variety and basic protection. ][+variety. ]Overall, while the case has its merits, potential buyers should be aware of the issues related to [-fit and ]durability that may arise with extended use. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_long_summary",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "The silicone case for AirPods has received mixed reviews from customers, highlighting both its appealing design and significant functional issues. Many users appreciate the vibrant colors, with options like B-Blue being particularly popular. The case fits well [-initially and offers good protection, ][+initially, ]with some users noting that it matches their work attire perfectly. [-However, a common complaint is that the case tends to become loose over time, especially the top cover, which fails to stay in place during regular use. This has led to frustrations, as several customers found the cover slipping off or not aligning properly with the AirPods case, rendering it less effective. Additionally, while the silicone material is described as smooth and soft, some reviewers criticized its durability, stating that it feels flimsy and poorly cut. ]The carabiner attachment also received negative feedback, with reports of it being difficult to attach or breaking easily. Despite these drawbacks, some users found the case to be a good value for the price, especially for those who prioritize color [-variety and basic protection. Overall, while the case has its merits, potential buyers should be aware of the issues related to fit and durability that may arise with extended use. ][+variety. ]",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_long_summary",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "The silicone case for AirPods has received mixed reviews from customers, highlighting both its appealing design and significant functional issues. Many users appreciate the vibrant colors, with options like B-Blue being particularly popular. The case fits well [-initially and offers good protection, ][+initially, ]with some users noting that it matches their work attire perfectly. [-However, a common complaint is that the case tends to become loose over time, especially the top cover, which fails to stay in place during regular use. This has led to frustrations, as several customers found the cover slipping off or not aligning properly with the AirPods case, rendering it less effective. Additionally, while the silicone material is described as smooth and soft, some reviewers criticized its durability, stating that it feels flimsy and poorly cut. ]The carabiner attachment also received negative feedback, with reports of it being difficult to [-attach or breaking easily. ][+attach. ]Despite these drawbacks, some users found the case to be a good value for the price, especially for those who prioritize color [-variety and basic protection. Overall, while the case has its merits, potential buyers should be aware of the issues related to fit and durability that may arise with extended use. ][+variety. ]",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_long_summary",
+   "family": "quantifier_swap",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "The silicone case for AirPods has received mixed reviews from customers, highlighting both its appealing design and significant functional issues. Many users appreciate the vibrant colors, with options like B-Blue being particularly popular. The case fits well initially and offers good protection, with some users noting that it matches their work attire perfectly. However, a common complaint is that the case tends to become loose over time, especially the top cover, which fails to stay in place during regular use. This has led to frustrations, as [-several ][+a few ]customers found the cover slipping off or not aligning properly with the AirPods case, rendering it less effective. Additionally, while the silicone material is described as smooth and soft, some reviewers criticized its durability, stating that it feels flimsy and poorly cut. The carabiner attachment also received negative feedback, with reports of it being difficult to attach or breaking easily. Despite these drawbacks, some users found the case to be a good value for the price, especially for those who prioritize color variety and basic protection. Overall, while the case has its merits, potential buyers should be aware of the issues related to fit and durability that may arise with extended use. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_long_summary",
+   "family": "quantifier_swap",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "The silicone case for AirPods has received mixed reviews from customers, highlighting both its appealing design and significant functional issues. Many users appreciate the vibrant colors, with options like B-Blue being particularly popular. The case fits well initially and offers good protection, with some users noting that it matches their work attire perfectly. However, a common complaint is that the case tends to become loose over time, especially the top cover, which fails to stay in place during regular use. This has led to frustrations, as several customers found the cover slipping off or not aligning properly with the AirPods case, rendering it less effective. Additionally, while the silicone material is described as smooth and soft, [-some ][+many ]reviewers criticized its durability, stating that it feels flimsy and poorly cut. The carabiner attachment also received negative feedback, with reports of it being difficult to attach or breaking easily. Despite these drawbacks, some users found the case to be a good value for the price, especially for those who prioritize color variety and basic protection. Overall, while the case has its merits, potential buyers should be aware of the issues related to fit and durability that may arise with extended use. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_long_summary",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "The silicone case for AirPods has received mixed reviews from customers, highlighting both its appealing design and significant functional issues. Many users appreciate the vibrant colors, with options like B-Blue being particularly popular. The case fits well initially and offers good protection, with some users noting that it matches their work attire perfectly. However, a common complaint is that the case tends to become loose over time, especially the top cover, which fails to stay in place during regular use. This has led to frustrations, as [-several ][+a few ]customers found the cover slipping off or not aligning properly with the AirPods case, rendering it less effective. Additionally, while the silicone material is described as smooth and soft, [-some ][+many ]reviewers criticized its durability, stating that it feels flimsy and poorly cut. The carabiner attachment also received negative feedback, with reports of it being difficult to attach or breaking easily. Despite these drawbacks, some users found the case to be a good value for the price, especially for those who prioritize color variety and basic protection. Overall, while the case has its merits, potential buyers should be aware of the issues related to fit and durability that may arise with extended use. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_long_summary",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "The silicone case for AirPods has received mixed reviews from customers, highlighting both its appealing design and significant functional issues. Many users appreciate the vibrant colors, with options like B-Blue being particularly popular. The case fits well initially and offers good protection, with some users noting that it matches their work attire perfectly. However, a common complaint is that the case tends to become loose over time, especially the top cover, which fails to stay in place during regular use. This has led to frustrations, as [-several ][+a few ]customers found the cover slipping off or not aligning properly with the AirPods case, rendering it less effective. Additionally, while the silicone material is described as smooth and soft, [-some ][+many ]reviewers criticized its durability, stating that it feels flimsy and poorly cut. The carabiner attachment also received negative feedback, with reports of it being difficult to attach or breaking easily. Despite these drawbacks, [-some ][+the majority of ]users found the case to be a good value for the price, especially for those who prioritize color variety and basic protection. Overall, while the case has its merits, potential buyers should be aware of the issues related to fit and durability that may arise with extended use. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_long_summary",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": true,
+   "diff": "The silicone case for AirPods has received mixed reviews from customers, highlighting both its appealing design and significant functional issues. Many users appreciate the vibrant colors, with options like B-Blue being particularly popular. The case fits well initially and offers good protection, with some users noting that it matches their work attire perfectly. However, a common complaint is that the case tends to become loose over time, especially the top cover, which fails to stay in place during regular use. This has led to frustrations, as several customers found the cover slipping off or not aligning properly with the AirPods case, rendering it less effective. Additionally, while the silicone material is described as smooth and soft, some reviewers criticized its durability, stating that it feels flimsy and poorly cut. The carabiner attachment also received negative feedback, with reports of it being difficult to attach or breaking easily. Despite these drawbacks, some users found the case to be a good value for the price, especially for those who prioritize color variety and basic protection. Overall, while the case has its merits, potential buyers should be aware of the issues related to fit and durability that may arise with extended use. ",
+   "labels": {
+    "A1": 0,
+    "A2": 0,
+    "A3": 0
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_majority_opinion",
+   "family": "factual_error",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers overwhelmingly praise these toothbrushes for their ultra-soft bristles, which are gentle on sensitive gums and effective at cleaning teeth without irritation. Many users report significant improvements in their gum health and overall cleaning experience compared to other brands. The toothbrushes are noted for their durability and quality, with several reviewers highlighting their long handles and compact heads that allow for better maneuverability. [-While some ][+Some ]mention the price as [-a bit high, they ][+quite low and ]agree that the benefits make them worth it. Overall, these toothbrushes are highly recommended by both users and dental professionals alike. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_majority_opinion",
+   "family": "factual_error",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers overwhelmingly praise these toothbrushes for their ultra-soft [-bristles, which ][+bristles and their effectiveness at cleaning teeth; however, the bristles ]are [-gentle ][+harsh ]on sensitive gums and [-effective at cleaning teeth without ][+cause ]irritation. Many users report significant improvements in their gum health and overall cleaning experience compared to other brands. The toothbrushes are noted for their durability and quality, with several reviewers highlighting their long handles and compact heads that allow for better maneuverability. While some mention the price as a bit high, they agree that the benefits make them worth it. Overall, these toothbrushes are highly recommended by both users and dental professionals alike. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_majority_opinion",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Customers overwhelmingly praise these toothbrushes for their ultra-soft [-bristles, which ][+bristles and their effectiveness at cleaning teeth; however, the bristles ]are [-gentle ][+harsh ]on sensitive gums and [-effective at cleaning teeth without ][+cause ]irritation. Many users report significant improvements in their gum health and overall cleaning experience compared to other brands. The toothbrushes are noted for their durability and quality, with several reviewers highlighting their long handles and compact heads that allow for better maneuverability. [-While some ][+Some ]mention the price as [-a bit high, they ][+quite low and ]agree that the benefits make them worth it. Overall, these toothbrushes are highly recommended by both users and dental professionals alike. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_majority_opinion",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "Customers overwhelmingly praise these toothbrushes for their ultra-soft [-bristles, which ][+bristles and their effectiveness at cleaning teeth; however, the bristles ]are [-gentle ][+harsh ]on sensitive gums and [-effective at cleaning teeth without ][+cause ]irritation. Many users report [-significant improvements in their gum health and ][+a better ]overall cleaning experience compared to other [-brands. ][+brands, despite significant deterioration in their gum health. ]The toothbrushes are noted for their durability and quality, with several reviewers highlighting their long handles and compact heads that allow for better maneuverability. [-While some ][+Some ]mention the price as [-a bit high, they ][+quite low and ]agree that the benefits make them worth it. Overall, these toothbrushes are highly recommended by both users and dental professionals alike. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_majority_opinion",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "Customers overwhelmingly praise these toothbrushes for their ultra-soft [-bristles, which ][+bristles; however, they leave teeth poorly cleaned, and the bristles ]are [-gentle ][+harsh ]on sensitive gums and [-effective at cleaning teeth without ][+cause ]irritation. Many users report [-significant improvements in their gum health and ][+a better ]overall cleaning experience compared to other [-brands. ][+brands, despite significant deterioration in their gum health. ]The toothbrushes are noted for their durability and quality, with several reviewers highlighting their long handles and compact heads that allow for better maneuverability. [-While some ][+Some ]mention the price as [-a bit high, they ][+quite low and ]agree that the benefits make them worth it. Overall, these toothbrushes are highly recommended by both users and dental professionals alike. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_majority_opinion",
+   "family": "aspect_deletion",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers overwhelmingly praise these toothbrushes for their ultra-soft bristles, which are gentle on sensitive gums and effective at cleaning teeth without irritation. Many users report significant improvements in their gum health and overall cleaning experience compared to other brands. The toothbrushes are noted for their durability and quality, with several reviewers highlighting their long handles and compact heads that allow for better maneuverability. [-While some mention the price as a bit high, they ][+They ]agree that the benefits make them worth it. Overall, these toothbrushes are highly recommended by both users and dental professionals alike. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_majority_opinion",
+   "family": "aspect_deletion",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers overwhelmingly praise these toothbrushes for their ultra-soft bristles, which are gentle on sensitive gums and effective at cleaning teeth without irritation. Many users report significant improvements in their [-gum health and ]overall cleaning experience compared to other brands. The toothbrushes are noted for their durability and quality, with several reviewers highlighting their long handles and compact heads that allow for better maneuverability. While some mention the price as a bit high, they agree that the benefits make them worth it. Overall, these toothbrushes are highly recommended by both users and dental professionals alike. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_majority_opinion",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Customers overwhelmingly praise these toothbrushes for their ultra-soft bristles, which are gentle on sensitive gums and effective at cleaning teeth without irritation. Many users report significant improvements in their [-gum health and ]overall cleaning experience compared to other brands. The toothbrushes are noted for their durability and quality, with several reviewers highlighting their long handles and compact heads that allow for better maneuverability. [-While some mention the price as a bit high, they ][+They ]agree that the benefits make them worth it. Overall, these toothbrushes are highly recommended by both users and dental professionals alike. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_majority_opinion",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "Customers overwhelmingly praise these toothbrushes for their ultra-soft bristles, which are [-gentle on sensitive gums and ]effective at cleaning [-teeth without irritation. ][+teeth. ]Many users report significant improvements in their [-gum health and ]overall cleaning experience compared to other brands. The toothbrushes are noted for their durability and quality, with several reviewers highlighting their long handles and compact heads that allow for better maneuverability. [-While some mention the price as a bit high, they ][+They ]agree that the benefits make them worth it. Overall, these toothbrushes are highly recommended by both users and dental professionals alike. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_majority_opinion",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "Customers overwhelmingly praise these toothbrushes for their ultra-soft [-bristles, which are gentle on sensitive gums and effective at cleaning teeth without irritation. ][+bristles. ]Many users report significant improvements in their [-gum health and ]overall cleaning experience compared to other brands. The toothbrushes are noted for their durability and quality, with several reviewers highlighting their long handles and compact heads that allow for better maneuverability. [-While some mention the price as a bit high, they ][+They ]agree that the benefits make them worth it. Overall, these toothbrushes are highly recommended by both users and dental professionals alike. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_majority_opinion",
+   "family": "quantifier_swap",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers overwhelmingly praise these toothbrushes for their ultra-soft bristles, which are gentle on sensitive gums and effective at cleaning teeth without irritation. Many users report significant improvements in their gum health and overall cleaning experience compared to other brands. The toothbrushes are noted for their durability and quality, with several reviewers highlighting their long handles and compact heads that allow for better maneuverability. While [-some ][+only few ]mention the price as a bit high, they agree that the benefits make them worth it. Overall, these toothbrushes are highly recommended by both users and dental professionals alike. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_majority_opinion",
+   "family": "quantifier_swap",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers overwhelmingly praise these toothbrushes for their ultra-soft bristles, which are gentle on sensitive gums and effective at cleaning teeth without irritation. [-Many ][+A few ]users report significant improvements in their gum health and overall cleaning experience compared to other brands. The toothbrushes are noted for their durability and quality, with several reviewers highlighting their long handles and compact heads that allow for better maneuverability. While some mention the price as a bit high, they agree that the benefits make them worth it. Overall, these toothbrushes are highly recommended by both users and dental professionals alike. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_majority_opinion",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Customers overwhelmingly praise these toothbrushes for their ultra-soft bristles, which are gentle on sensitive gums and effective at cleaning teeth without irritation. [-Many ][+A few ]users report significant improvements in their gum health and overall cleaning experience compared to other brands. The toothbrushes are noted for their durability and quality, with several reviewers highlighting their long handles and compact heads that allow for better maneuverability. While [-some ][+only few ]mention the price as a bit high, they agree that the benefits make them worth it. Overall, these toothbrushes are highly recommended by both users and dental professionals alike. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_majority_opinion",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "Customers overwhelmingly praise these toothbrushes for their ultra-soft bristles, which are gentle on sensitive gums and effective at cleaning teeth without irritation. [-Many ][+A few ]users report significant improvements in their gum health and overall cleaning experience compared to other brands. The toothbrushes are noted for their durability and quality, with [-several ][+the majority of ]reviewers highlighting their long handles and compact heads that allow for better maneuverability. While [-some ][+only few ]mention the price as a bit high, they agree that the benefits make them worth it. Overall, these toothbrushes are highly recommended by both users and dental professionals alike. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_majority_opinion",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": true,
+   "diff": "Customers overwhelmingly praise these toothbrushes for their ultra-soft bristles, which are gentle on sensitive gums and effective at cleaning teeth without irritation. Many users report significant improvements in their gum health and overall cleaning experience compared to other brands. The toothbrushes are noted for their durability and quality, with several reviewers highlighting their long handles and compact heads that allow for better maneuverability. While some mention the price as a bit high, they agree that the benefits make them worth it. Overall, these toothbrushes are highly recommended by both users and dental professionals alike. ",
+   "labels": {
+    "A1": 1,
+    "A2": 0,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "openai_positive_and_negative",
+   "family": "factual_error",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Star King Hotel in Phnom Penh offers spacious, clean rooms and friendly, attentive staff, making it a comfortable stay for many guests. The rooftop pool and bar are highlights, along with a good breakfast and reasonable prices. However, the hotel is located about 15-20 minutes from the city center, which can be inconvenient for those wanting easy access to attractions. Some guests [-reported issues with ][+found ]the [-pool's cleanliness, ][+pool consistently clean, while reporting ]limited restaurant [-hours, ][+hours ]and language barriers with staff. While the hotel has potential, its isolated location and inconsistent amenities may deter some travelers. Overall, it’s a mixed experience. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "openai_positive_and_negative",
+   "family": "factual_error",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Star King Hotel in Phnom Penh offers spacious, clean rooms and friendly, attentive staff, making it a comfortable stay for many guests. The rooftop pool and bar are highlights, along with a good [-breakfast and reasonable prices. ][+breakfast, though prices are steep. ]However, the hotel is located about 15-20 minutes from the city center, which can be inconvenient for those wanting easy access to attractions. Some guests reported issues with the pool's cleanliness, limited restaurant hours, and language barriers with staff. While the hotel has potential, its isolated location and inconsistent amenities may deter some travelers. Overall, it’s a mixed experience. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "openai_positive_and_negative",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Star King Hotel in Phnom Penh offers spacious, clean rooms and friendly, attentive staff, making it a comfortable stay for many guests. The rooftop pool and bar are highlights, along with a good [-breakfast and reasonable prices. ][+breakfast, though prices are steep. ]However, the hotel is located about 15-20 minutes from the city center, which can be inconvenient for those wanting easy access to attractions. Some guests [-reported issues with ][+found ]the [-pool's cleanliness, ][+pool consistently clean, while reporting ]limited restaurant [-hours, ][+hours ]and language barriers with staff. While the hotel has potential, its isolated location and inconsistent amenities may deter some travelers. Overall, it’s a mixed experience. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "openai_positive_and_negative",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "Star King Hotel in Phnom Penh offers spacious, clean rooms and friendly, attentive staff, making it a comfortable stay for many guests. The rooftop pool and bar are highlights, along with a good [-breakfast and reasonable prices. ][+breakfast, though prices are steep. ]However, the hotel is located about 15-20 minutes from the city center, which can be [-inconvenient ][+convenient ]for those wanting easy access to attractions. Some guests [-reported issues with ][+found ]the [-pool's cleanliness, ][+pool consistently clean, while reporting ]limited restaurant [-hours, ][+hours ]and language barriers with staff. While the hotel has potential, its [-isolated location and ]inconsistent amenities may deter some [-travelers. ][+travelers, though its accessible location may appeal to them. ]Overall, it’s a mixed experience. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "openai_positive_and_negative",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "Star King Hotel in Phnom Penh offers spacious, clean rooms and friendly, attentive staff, making it a comfortable stay for many guests. The rooftop pool and bar are highlights, along with a good [-breakfast and reasonable prices. ][+breakfast, though prices are steep. ]However, the hotel is located about 15-20 minutes from the city center, which can be [-inconvenient ][+convenient ]for those wanting easy access to attractions. Some guests [-reported issues with ][+found ]the [-pool's cleanliness, limited ][+pool consistently clean and noted generous ]restaurant hours, [-and ][+while reporting ]language barriers with staff. While the hotel has potential, its [-isolated location and ]inconsistent amenities may deter some [-travelers. ][+travelers, though its accessible location may appeal to them. ]Overall, it’s a mixed experience. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "openai_positive_and_negative",
+   "family": "aspect_deletion",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Star King Hotel in Phnom Penh offers spacious, clean rooms and friendly, attentive staff, making it a comfortable stay for many guests. The rooftop pool and bar are highlights, along with a good breakfast and reasonable prices. However, the hotel is located about 15-20 minutes from the city center, which can be inconvenient for those wanting easy access to attractions. Some guests reported [-issues with the pool's cleanliness, ]limited restaurant [-hours, ][+hours ]and language barriers with staff. While the hotel has potential, its isolated location and inconsistent amenities may deter some travelers. Overall, it’s a mixed experience. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "openai_positive_and_negative",
+   "family": "aspect_deletion",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Star King Hotel in Phnom Penh offers spacious, clean rooms and friendly, attentive staff, making it a comfortable stay for many guests. The rooftop pool and bar are highlights, along with a good [-breakfast and reasonable prices. ][+breakfast. ]However, the hotel is located about 15-20 minutes from the city center, which can be inconvenient for those wanting easy access to attractions. Some guests reported issues with the pool's cleanliness, limited restaurant hours, and language barriers with staff. While the hotel has potential, its isolated location and inconsistent amenities may deter some travelers. Overall, it’s a mixed experience. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "openai_positive_and_negative",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Star King Hotel in Phnom Penh offers spacious, clean rooms and friendly, attentive staff, making it a comfortable stay for many guests. The rooftop pool and bar are highlights, along with a good [-breakfast and reasonable prices. ][+breakfast. ]However, the hotel is located about 15-20 minutes from the city center, which can be inconvenient for those wanting easy access to attractions. Some guests reported [-issues with the pool's cleanliness, ]limited restaurant [-hours, ][+hours ]and language barriers with staff. While the hotel has potential, its isolated location and inconsistent amenities may deter some travelers. Overall, it’s a mixed experience. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "openai_positive_and_negative",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "Star King Hotel in Phnom Penh offers spacious, clean rooms and friendly, attentive staff, making it a comfortable stay for many guests. The rooftop pool and bar are highlights, along with a good [-breakfast and reasonable prices. However, the hotel is located about 15-20 minutes from the city center, which can be inconvenient for those wanting easy access to attractions. ][+breakfast. ]Some guests reported [-issues with the pool's cleanliness, ]limited restaurant [-hours, ][+hours ]and language barriers with staff. While the hotel has potential, [-its isolated location and ]inconsistent amenities may deter some travelers. Overall, it’s a mixed experience. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "openai_positive_and_negative",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "Star King Hotel in Phnom Penh offers spacious, clean rooms and friendly, attentive staff, making it a comfortable stay for many guests. The rooftop pool and bar are highlights, along with a good [-breakfast and reasonable prices. However, the hotel is located about 15-20 minutes from the city center, which can be inconvenient for those wanting easy access to attractions. ][+breakfast. ]Some guests reported [-issues with the pool's cleanliness, limited restaurant hours, and ]language barriers with staff. While the hotel has potential, [-its isolated location and ]inconsistent amenities may deter some travelers. Overall, it’s a mixed experience. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "openai_positive_and_negative",
+   "family": "quantifier_swap",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Star King Hotel in Phnom Penh offers spacious, clean rooms and friendly, attentive staff, making it a comfortable stay for many guests. The rooftop pool and bar are highlights, along with a good breakfast and reasonable prices. However, the hotel is located about 15-20 minutes from the city center, which can be inconvenient for those wanting easy access to attractions. [-Some ][+A small number of ]guests reported issues with the pool's cleanliness, limited restaurant hours, and language barriers with staff. While the hotel has potential, its isolated location and inconsistent amenities may deter some travelers. Overall, it’s a mixed experience. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "openai_positive_and_negative",
+   "family": "quantifier_swap",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Star King Hotel in Phnom Penh offers spacious, clean rooms and friendly, attentive staff, making it a comfortable stay for many guests. The rooftop pool and bar are highlights, along with a good breakfast and reasonable prices. However, the hotel is located about 15-20 minutes from the city center, which can be inconvenient for those wanting easy access to attractions. Some guests reported issues with the pool's cleanliness, limited restaurant hours, and language barriers with staff. While the hotel has potential, its isolated location and inconsistent amenities may deter [-some ][+most ]travelers. Overall, it’s a mixed experience. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "openai_positive_and_negative",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Star King Hotel in Phnom Penh offers spacious, clean rooms and friendly, attentive staff, making it a comfortable stay for many guests. The rooftop pool and bar are highlights, along with a good breakfast and reasonable prices. However, the hotel is located about 15-20 minutes from the city center, which can be inconvenient for those wanting easy access to attractions. [-Some ][+A small number of ]guests reported issues with the pool's cleanliness, limited restaurant hours, and language barriers with staff. While the hotel has potential, its isolated location and inconsistent amenities may deter [-some ][+most ]travelers. Overall, it’s a mixed experience. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "openai_positive_and_negative",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "Star King Hotel in Phnom Penh offers spacious, clean rooms and friendly, attentive staff, making it a comfortable stay for [-many ][+a minority of ]guests. The rooftop pool and bar are highlights, along with a good breakfast and reasonable prices. However, the hotel is located about 15-20 minutes from the city center, which can be inconvenient for those wanting easy access to attractions. [-Some ][+A small number of ]guests reported issues with the pool's cleanliness, limited restaurant hours, and language barriers with staff. While the hotel has potential, its isolated location and inconsistent amenities may deter [-some ][+most ]travelers. Overall, it’s a mixed experience. ",
+   "labels": {
+    "A1": 1,
+    "A2": 0,
+    "A3": 1
+   }
+  },
+  {
+   "source": "hotel_rec",
+   "style": "openai_positive_and_negative",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": true,
+   "diff": "Star King Hotel in Phnom Penh offers spacious, clean rooms and friendly, attentive staff, making it a comfortable stay for many guests. The rooftop pool and bar are highlights, along with a good breakfast and reasonable prices. However, the hotel is located about 15-20 minutes from the city center, which can be inconvenient for those wanting easy access to attractions. Some guests reported issues with the pool's cleanliness, limited restaurant hours, and language barriers with staff. While the hotel has potential, its isolated location and inconsistent amenities may deter some travelers. Overall, it’s a mixed experience. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": null
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_short_summary",
+   "family": "factual_error",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "The USB-C extension cable has received mixed reviews. Many customers praise its great quality, durability, and good value, noting it effectively extends connections for various devices like MacBooks and chargers. Users appreciate its solid build and flexibility, with some highlighting its stylish design. However, [+while compatibility with certain devices is reported to be trouble-free, ]there are reports of issues, including intermittent [-functionality and compatibility problems with certain devices, ][+functionality, ]leading to returns. Overall, while many find it a reliable and convenient solution for extending cable lengths, some experienced significant problems that affected their devices. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_short_summary",
+   "family": "factual_error",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "The USB-C extension cable has received mixed reviews. Many customers praise its great quality, durability, and good value, [+while ]noting [+that ]it [-effectively extends ][+struggles to extend ]connections for various devices like MacBooks and chargers. Users appreciate its solid build and flexibility, with some highlighting its stylish design. However, there are reports of issues, including intermittent functionality and compatibility problems with certain devices, leading to returns. Overall, while many find it a reliable and convenient solution for extending cable lengths, some experienced significant problems that affected their devices. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_short_summary",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "The USB-C extension cable has received mixed reviews. Many customers praise its great quality, durability, and good value, [+while ]noting [+that ]it [-effectively extends ][+struggles to extend ]connections for various devices like MacBooks and chargers. Users appreciate its solid build and flexibility, with some highlighting its stylish design. However, [+while compatibility with certain devices is reported to be trouble-free, ]there are reports of issues, including intermittent [-functionality and compatibility problems with certain devices, ][+functionality, ]leading to returns. Overall, while many find it a reliable and convenient solution for extending cable lengths, some experienced significant problems that affected their devices. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_short_summary",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "The USB-C extension cable has received mixed reviews. Many customers praise its great [-quality, ][+quality and ]durability, [+though they consider it poor value ]and [-good value, noting ][+note that ]it [-effectively extends ][+struggles to extend ]connections for various devices like MacBooks and chargers. Users appreciate its solid build and flexibility, with some highlighting its stylish design. However, [+while compatibility with certain devices is reported to be trouble-free, ]there are reports of issues, including intermittent [-functionality and compatibility problems with certain devices, ][+functionality, ]leading to returns. Overall, while many find it a reliable and convenient solution for extending cable lengths, some experienced significant problems that affected their devices. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_short_summary",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "The USB-C extension cable has received mixed reviews. Many customers praise its great quality, [-durability, ][+though they report that it wears out quickly, consider it poor value, ]and [-good value, noting ][+note that ]it [-effectively extends ][+struggles to extend ]connections for various devices like MacBooks and chargers. Users appreciate its solid build and flexibility, with some highlighting its stylish design. However, [+while compatibility with certain devices is reported to be trouble-free, ]there are reports of issues, including intermittent [-functionality and compatibility problems with certain devices, ][+functionality, ]leading to returns. Overall, while many find it a reliable and convenient solution for extending cable lengths, some experienced significant problems that affected their devices. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_short_summary",
+   "family": "aspect_deletion",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "The USB-C extension cable has received mixed reviews. Many customers praise its great quality, durability, and good value, noting it effectively extends connections for various devices like MacBooks and chargers. Users appreciate its solid build and flexibility, with some highlighting its stylish design. However, there are reports of issues, including [-intermittent functionality and ]compatibility problems with certain devices, leading to returns. Overall, while many find it a reliable and convenient solution for extending cable lengths, some experienced significant problems that affected their devices. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_short_summary",
+   "family": "aspect_deletion",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "The USB-C extension cable has received mixed reviews. Many customers praise its great quality, durability, and good [-value, noting it effectively extends connections for various devices like MacBooks and chargers. ][+value. ]Users appreciate its solid build and flexibility, with some highlighting its stylish design. However, there are reports of issues, including intermittent functionality and compatibility problems with certain devices, leading to returns. Overall, while many find it a reliable and convenient solution for extending cable lengths, some experienced significant problems that affected their devices. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_short_summary",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "The USB-C extension cable has received mixed reviews. Many customers praise its great quality, durability, and good [-value, noting it effectively extends connections for various devices like MacBooks and chargers. ][+value. ]Users appreciate its solid build and flexibility, with some highlighting its stylish design. However, there are reports of issues, including [-intermittent functionality and ]compatibility problems with certain devices, leading to returns. Overall, while many find it a reliable and convenient solution for extending cable lengths, some experienced significant problems that affected their devices. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_short_summary",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "The USB-C extension cable has received mixed reviews. Many customers praise its great quality, durability, and good [-value, noting it effectively extends connections for various devices like MacBooks and chargers. ][+value. ]Users appreciate its solid build and flexibility, with some highlighting its stylish design. [-However, there are reports of issues, including intermittent functionality and compatibility problems with certain devices, leading to returns. ]Overall, while many find it a reliable and convenient solution for extending cable lengths, some experienced significant problems that affected their devices. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_short_summary",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "The USB-C extension cable has received mixed reviews. Many customers praise its great quality, durability, and good [-value, noting it effectively extends connections for various devices like MacBooks and chargers. ][+value. ]Users appreciate its solid build and flexibility, with some highlighting its stylish design. [-However, there are reports of issues, including intermittent functionality and compatibility problems with certain devices, leading to returns. ]Overall, [-while ]many find it a reliable and convenient solution for extending cable [-lengths, some experienced significant problems that affected their devices. ][+lengths. ]",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_short_summary",
+   "family": "quantifier_swap",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "The USB-C extension cable has received mixed reviews. Many customers praise its great quality, durability, and good value, noting it effectively extends connections for various devices like MacBooks and chargers. Users appreciate its solid build and flexibility, with some highlighting its stylish design. However, there are reports of issues, including intermittent functionality and compatibility problems with certain devices, leading to returns. Overall, while many find it a reliable and convenient solution for extending cable lengths, [-some ][+only few ]experienced significant problems that affected their devices. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_short_summary",
+   "family": "quantifier_swap",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "The USB-C extension cable has received mixed reviews. [-Many ][+A minority of ]customers praise its great quality, durability, and good value, noting it effectively extends connections for various devices like MacBooks and chargers. Users appreciate its solid build and flexibility, with some highlighting its stylish design. However, there are reports of issues, including intermittent functionality and compatibility problems with certain devices, leading to returns. Overall, while many find it a reliable and convenient solution for extending cable lengths, some experienced significant problems that affected their devices. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_short_summary",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "The USB-C extension cable has received mixed reviews. [-Many ][+A minority of ]customers praise its great quality, durability, and good value, noting it effectively extends connections for various devices like MacBooks and chargers. Users appreciate its solid build and flexibility, with some highlighting its stylish design. However, there are reports of issues, including intermittent functionality and compatibility problems with certain devices, leading to returns. Overall, while many find it a reliable and convenient solution for extending cable lengths, [-some ][+only few ]experienced significant problems that affected their devices. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_short_summary",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "The USB-C extension cable has received mixed reviews. [-Many ][+A minority of ]customers praise its great quality, durability, and good value, noting it effectively extends connections for various devices like MacBooks and chargers. Users appreciate its solid build and flexibility, with some highlighting its stylish design. However, there are reports of issues, including intermittent functionality and compatibility problems with certain devices, leading to returns. Overall, while [-many ][+a minority of ]find it a reliable and convenient solution for extending cable lengths, [-some ][+only few ]experienced significant problems that affected their devices. ",
+   "labels": {
+    "A1": 0,
+    "A2": 0,
+    "A3": 0
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "openai_short_summary",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": true,
+   "diff": "The USB-C extension cable has received mixed reviews. Many customers praise its great quality, durability, and good value, noting it effectively extends connections for various devices like MacBooks and chargers. Users appreciate its solid build and flexibility, with some highlighting its stylish design. However, there are reports of issues, including intermittent functionality and compatibility problems with certain devices, leading to returns. Overall, while many find it a reliable and convenient solution for extending cable lengths, some experienced significant problems that affected their devices. ",
+   "labels": {
+    "A1": 0,
+    "A2": 0,
+    "A3": 0
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_single_sentence",
+   "family": "factual_error",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "The loading process at this facility is [-notoriously slow, disorganized, ][+disorganized ]and frustrating, with rude [-staff, ][+staff and ]limited parking, [-and long wait times, ]making it a challenging experience for truck [-drivers. ][+drivers, though loading is fast with short wait times. ]",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_single_sentence",
+   "family": "factual_error",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": true,
+   "diff": "The loading process at this facility is notoriously slow, disorganized, and frustrating, with rude staff, limited parking, and long wait times, making it a challenging experience for truck drivers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_single_sentence",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": true,
+   "diff": "The loading process at this facility is notoriously slow, disorganized, and frustrating, with rude staff, limited parking, and long wait times, making it a challenging experience for truck drivers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_single_sentence",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": true,
+   "diff": "The loading process at this facility is notoriously slow, disorganized, and frustrating, with rude staff, limited parking, and long wait times, making it a challenging experience for truck drivers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_single_sentence",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": true,
+   "diff": "The loading process at this facility is notoriously slow, disorganized, and frustrating, with rude staff, limited parking, and long wait times, making it a challenging experience for truck drivers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_single_sentence",
+   "family": "aspect_deletion",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "The loading process at this facility is [-notoriously slow, disorganized, ][+disorganized ]and frustrating, with rude [-staff, ][+staff and ]limited parking, [-and long wait times, ]making it a challenging experience for truck drivers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_single_sentence",
+   "family": "aspect_deletion",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": true,
+   "diff": "The loading process at this facility is notoriously slow, disorganized, and frustrating, with rude staff, limited parking, and long wait times, making it a challenging experience for truck drivers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_single_sentence",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": true,
+   "diff": "The loading process at this facility is notoriously slow, disorganized, and frustrating, with rude staff, limited parking, and long wait times, making it a challenging experience for truck drivers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_single_sentence",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": true,
+   "diff": "The loading process at this facility is notoriously slow, disorganized, and frustrating, with rude staff, limited parking, and long wait times, making it a challenging experience for truck drivers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_single_sentence",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": true,
+   "diff": "The loading process at this facility is notoriously slow, disorganized, and frustrating, with rude staff, limited parking, and long wait times, making it a challenging experience for truck drivers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_single_sentence",
+   "family": "quantifier_swap",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": true,
+   "diff": "The loading process at this facility is notoriously slow, disorganized, and frustrating, with rude staff, limited parking, and long wait times, making it a challenging experience for truck drivers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_single_sentence",
+   "family": "quantifier_swap",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": true,
+   "diff": "The loading process at this facility is notoriously slow, disorganized, and frustrating, with rude staff, limited parking, and long wait times, making it a challenging experience for truck drivers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_single_sentence",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": true,
+   "diff": "The loading process at this facility is notoriously slow, disorganized, and frustrating, with rude staff, limited parking, and long wait times, making it a challenging experience for truck drivers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_single_sentence",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": true,
+   "diff": "The loading process at this facility is notoriously slow, disorganized, and frustrating, with rude staff, limited parking, and long wait times, making it a challenging experience for truck drivers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "google_maps",
+   "style": "openai_single_sentence",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": true,
+   "diff": "The loading process at this facility is notoriously slow, disorganized, and frustrating, with rude staff, limited parking, and long wait times, making it a challenging experience for truck drivers. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "qwen_faithful",
+   "family": "factual_error",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers generally praise this laptop charger as a great, affordable replacement that works like the original. Many highlight its perfect fit, fast delivery, and good value compared to name brands. However, quality concerns exist; several users report the charger failing within weeks or [-months, developing shorts, ][+months ]or requiring cord manipulation to [-function. ][+function, while saying it remains electrically sound. ]Fit issues are also noted, with some plugs being too thick or loose, occasionally requiring modification. While many find it reliable and well-made, others warn against buying due to poor durability. Overall, it is a cost-effective option for those needing a quick replacement, though longevity varies significantly. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "qwen_faithful",
+   "family": "factual_error",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers generally praise this laptop charger as a great, affordable [-replacement that works like ][+replacement, though it performs worse than ]the original. Many highlight its perfect fit, fast delivery, and good value compared to name brands. However, quality concerns exist; several users report the charger failing within weeks or months, developing shorts, or requiring cord manipulation to function. Fit issues are also noted, with some plugs being too thick or loose, occasionally requiring modification. While many find it reliable and well-made, others warn against buying due to poor durability. Overall, it is a cost-effective option for those needing a quick replacement, though longevity varies significantly. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "qwen_faithful",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Customers generally praise this laptop charger as a great, affordable [-replacement that works like ][+replacement, though it performs worse than ]the original. Many highlight its perfect fit, fast delivery, and good value compared to name brands. However, quality concerns exist; several users report the charger failing within weeks or [-months, developing shorts, ][+months ]or requiring cord manipulation to [-function. ][+function, while saying it remains electrically sound. ]Fit issues are also noted, with some plugs being too thick or loose, occasionally requiring modification. While many find it reliable and well-made, others warn against buying due to poor durability. Overall, it is a cost-effective option for those needing a quick replacement, though longevity varies significantly. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "qwen_faithful",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "Customers generally praise this laptop charger as a great, affordable [-replacement that works like ][+replacement, though it performs worse than ]the original. Many highlight its perfect fit, fast delivery, and good value compared to name brands. However, quality concerns exist; several users report the charger failing within weeks or [-months, developing shorts, ][+months ]or requiring cord manipulation to [-function. Fit issues are ][+function, while saying it remains electrically sound. A proper fit is ]also noted, with some plugs [-being too thick or loose, occasionally requiring modification. ][+having the right dimensions and seating securely as supplied. ]While many find it reliable and well-made, others warn against buying due to poor durability. Overall, it is a cost-effective option for those needing a quick replacement, though longevity varies significantly. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "qwen_faithful",
+   "family": "factual_error",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "Customers generally praise this laptop charger as a great, affordable [-replacement that works like ][+replacement, though it performs worse than ]the original. Many highlight its perfect [-fit, ][+fit and ]fast delivery, [-and good ][+while describing it as poor ]value compared to name brands. However, quality concerns exist; several users report the charger failing within weeks or [-months, developing shorts, ][+months ]or requiring cord manipulation to [-function. Fit issues are ][+function, while saying it remains electrically sound. A proper fit is ]also noted, with some plugs [-being too thick or loose, occasionally requiring modification. ][+having the right dimensions and seating securely as supplied. ]While many find it reliable and well-made, others warn against buying due to poor durability. Overall, it is a cost-effective option for those needing a quick replacement, though longevity varies significantly. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "qwen_faithful",
+   "family": "aspect_deletion",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers generally praise this laptop charger as a great, affordable replacement that works like the original. Many highlight its perfect fit, fast delivery, and good value compared to name brands. However, quality concerns exist; several users report the charger failing within weeks or [-months, developing shorts, ][+months ]or requiring cord manipulation to function. Fit issues are also noted, with some plugs being too thick or loose, occasionally requiring modification. While many find it reliable and well-made, others warn against buying due to poor durability. Overall, it is a cost-effective option for those needing a quick replacement, though longevity varies significantly. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "qwen_faithful",
+   "family": "aspect_deletion",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers generally praise this laptop charger as a great, affordable [-replacement that works like the original. ][+replacement. ]Many highlight its perfect fit, fast delivery, and good value compared to name brands. However, quality concerns exist; several users report the charger failing within weeks or months, developing shorts, or requiring cord manipulation to function. Fit issues are also noted, with some plugs being too thick or loose, occasionally requiring modification. While many find it reliable and well-made, others warn against buying due to poor durability. Overall, it is a cost-effective option for those needing a quick replacement, though longevity varies significantly. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "qwen_faithful",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Customers generally praise this laptop charger as a great, affordable [-replacement that works like the original. ][+replacement. ]Many highlight its perfect fit, fast delivery, and good value compared to name brands. However, quality concerns exist; several users report the charger failing within weeks or [-months, developing shorts, ][+months ]or requiring cord manipulation to function. Fit issues are also noted, with some plugs being too thick or loose, occasionally requiring modification. While many find it reliable and well-made, others warn against buying due to poor durability. Overall, it is a cost-effective option for those needing a quick replacement, though longevity varies significantly. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "qwen_faithful",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "Customers generally praise this laptop charger as a great, affordable [-replacement that works like the original. ][+replacement. ]Many highlight its perfect fit, fast delivery, and good value compared to name brands. However, quality concerns exist; several users report the charger [-failing within weeks or months, developing shorts, or ]requiring cord manipulation to function. Fit issues are also noted, with some plugs being too thick or loose, occasionally requiring modification. While many find it reliable and well-made, others warn against buying due to poor durability. Overall, it is a cost-effective option for those needing a quick replacement, though longevity varies significantly. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "qwen_faithful",
+   "family": "aspect_deletion",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "Customers generally praise this laptop charger as a great, affordable [-replacement that works like the original. ][+replacement. ]Many highlight its perfect fit, fast delivery, and good value compared to name brands. However, quality concerns exist; several users report the charger [-failing within weeks or months, developing shorts, or ]requiring cord manipulation to function. [-Fit issues are also noted, with some plugs being too thick or loose, occasionally requiring modification. ]While many find it reliable and well-made, others warn against buying due to poor durability. Overall, it is a cost-effective option for those needing a quick replacement, though longevity varies significantly. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "qwen_faithful",
+   "family": "quantifier_swap",
+   "direction": "advantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers generally praise this laptop charger as a great, affordable replacement that works like the original. Many highlight its perfect fit, fast delivery, and good value compared to name brands. However, quality concerns exist; [-several ][+a few ]users report the charger failing within weeks or months, developing shorts, or requiring cord manipulation to function. Fit issues are also noted, with some plugs being too thick or loose, occasionally requiring modification. While many find it reliable and well-made, others warn against buying due to poor durability. Overall, it is a cost-effective option for those needing a quick replacement, though longevity varies significantly. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "qwen_faithful",
+   "family": "quantifier_swap",
+   "direction": "disadvantageous",
+   "number_of_aspects": 1,
+   "declined": false,
+   "diff": "Customers generally praise this laptop charger as a great, affordable replacement that works like the original. Many highlight its perfect fit, fast delivery, and good value compared to name brands. However, quality concerns exist; several users report the charger failing within weeks or months, developing shorts, or requiring cord manipulation to function. Fit issues are also noted, with some plugs being too thick or loose, occasionally requiring modification. While [-many ][+a small number of ]find it reliable and well-made, others warn against buying due to poor durability. Overall, it is a cost-effective option for those needing a quick replacement, though longevity varies significantly. ",
+   "labels": {
+    "A1": 0,
+    "A2": 0,
+    "A3": 0
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "qwen_faithful",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 2,
+   "declined": false,
+   "diff": "Customers generally praise this laptop charger as a great, affordable replacement that works like the original. Many highlight its perfect fit, fast delivery, and good value compared to name brands. However, quality concerns exist; [-several ][+a few ]users report the charger failing within weeks or months, developing shorts, or requiring cord manipulation to function. Fit issues are also noted, with some plugs being too thick or loose, occasionally requiring modification. While [-many ][+a small number of ]find it reliable and well-made, others warn against buying due to poor durability. Overall, it is a cost-effective option for those needing a quick replacement, though longevity varies significantly. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "qwen_faithful",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 3,
+   "declined": false,
+   "diff": "Customers generally praise this laptop charger as a great, affordable replacement that works like the original. Many highlight its perfect fit, fast delivery, and good value compared to name brands. However, quality concerns exist; [-several ][+a few ]users report the charger failing within weeks or months, developing shorts, or requiring cord manipulation to function. Fit issues are also noted, with [-some ][+most ]plugs being too thick or loose, occasionally requiring modification. While [-many ][+a small number of ]find it reliable and well-made, others warn against buying due to poor durability. Overall, it is a cost-effective option for those needing a quick replacement, though longevity varies significantly. ",
+   "labels": {
+    "A1": 1,
+    "A2": 1,
+    "A3": 1
+   }
+  },
+  {
+   "source": "amazon",
+   "style": "qwen_faithful",
+   "family": "quantifier_swap",
+   "direction": "mixed",
+   "number_of_aspects": 4,
+   "declined": false,
+   "diff": "Customers generally praise this laptop charger as a great, affordable replacement that works like the original. [-Many ][+A minority of ]highlight its perfect fit, fast delivery, and good value compared to name brands. However, quality concerns exist; [-several ][+a few ]users report the charger failing within weeks or months, developing shorts, or requiring cord manipulation to function. Fit issues are also noted, with [-some ][+most ]plugs being too thick or loose, occasionally requiring modification. While [-many ][+a small number of ]find it reliable and well-made, others warn against buying due to poor durability. Overall, it is a cost-effective option for those needing a quick replacement, though longevity varies significantly. ",
+   "labels": {
+    "A1": 0,
+    "A2": 0,
+    "A3": 0
+   }
+  }
+ ]
+}

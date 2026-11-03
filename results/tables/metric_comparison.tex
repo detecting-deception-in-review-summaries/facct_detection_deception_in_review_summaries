@@ -1,0 +1,44 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.12}
+\caption{Sensitivity of reference-free summarization quality metrics to manual and LLM-generated one-aspect modifications of the same products, measured by AUROC ($0.5$ = chance). LLM modifications pool advantageous and disadvantageous edits. G-Eval uses Qwen3.6-27B. Bold values indicate the highest AUROC for each modification type and origin.}
+\label{tab:metric_comparison}
+\begin{tabular}{llcccccc}
+\toprule
+& 
+& \multicolumn{2}{c}{\textbf{Factual Error}}
+& \multicolumn{2}{c}{\textbf{Aspect Deletion}}
+& \multicolumn{2}{c}{\textbf{Quantifier Swap}} \\
+\cmidrule(lr){3-4}
+\cmidrule(lr){5-6}
+\cmidrule(l){7-8}
+\textbf{Metric} & \textbf{Family}
+& \textbf{Manual} & \textbf{LLM}
+& \textbf{Manual} & \textbf{LLM}
+& \textbf{Manual} & \textbf{LLM} \\
+\midrule
+
+G-Eval Consistency & LLM judge
+& 0.97 & 0.97 & 0.54 & 0.56 & \textbf{0.81} & \textbf{0.73} \\
+G-Eval Relevance & LLM judge
+& \textbf{0.98} & \textbf{0.98} & \textbf{0.65} & \textbf{0.65} & 0.78 & 0.72 \\
+SummaC-ZS & NLI
+& 0.59 & 0.60 & 0.50 & 0.48 & 0.56 & 0.53 \\
+SummaC-Conv & NLI
+& 0.51 & 0.53 & 0.49 & 0.50 & 0.52 & 0.51 \\
+QAFactEval & QA
+& 0.59 & 0.58 & 0.49 & 0.49 & 0.54 & 0.56 \\
+SUPERT & Pseudo-ref.
+& 0.52 & 0.53 & 0.52 & 0.52 & 0.51 & 0.50 \\
+AlignScore & Alignment
+& 0.69 & 0.68 & 0.50 & 0.51 & 0.67 & 0.61 \\
+FactGraph & Graph
+& 0.56 & 0.55 & 0.52 & 0.50 & 0.54 & 0.53 \\
+MiniCheck-7B & Fact-checking
+& 0.92 & 0.89 & 0.48 & 0.48 & 0.74 & 0.61 \\
+
+\bottomrule
+\end{tabular}
+\end{table*}
